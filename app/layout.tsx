@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import ThemeSwitch from "./components/theme-switch";
 import ThemeContextProvider from "./context/theme-context";
 import "./globals.css";
+import Navbar from "./components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-slate-100 text-slate-950 dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
+        className={`${inter.className} bg-slate-50 text-slate-950 dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
       >
         <ThemeContextProvider>
+          <Navbar />
+          <main className="max-w-7xl mx-auto">
+
           {children}
+          </main>
           <ThemeSwitch />
         </ThemeContextProvider>
       </body>
