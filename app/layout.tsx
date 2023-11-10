@@ -4,8 +4,7 @@ import ThemeSwitch from "./components/theme-switch";
 import ThemeContextProvider from "./context/theme-context";
 import "./globals.css";
 import Navbar from "./components/navbar";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter } from "./components/ui/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,14 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-slate-50 text-slate-950 dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
+        className={`${inter.className} antialiased bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
       >
         <ThemeContextProvider>
           <Navbar />
-          <main className="max-w-7xl mx-auto">
-
-          {children}
-          </main>
+          <main className="max-w-7xl mx-auto p-5">{children}</main>
           <ThemeSwitch />
         </ThemeContextProvider>
       </body>

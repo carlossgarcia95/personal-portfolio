@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import MobileMenu from "./mobile-menu";
 import { Button } from "./ui/button";
 
 type Navlink = {
@@ -15,15 +15,20 @@ const navbar = () => {
     { text: "Experience", href: "/#experience" },
   ];
   return (
-    <nav className="border-b mb-5 px-5 py-3">
-      <div className="flex justify-between items-center">
-        <Link href="/">Carlos Garcia</Link>
-        <div className="flex justify-end gap-8">
+    <nav className="sticky border-b px-5 py-3">
+      <div className="flex max-w-7xl mx-auto justify-between items-center">
+        <Link href="/" className="text-3xl font-normal">
+          CG
+        </Link>
+        <div className="hidden md:flex justify-end gap-8 text-xz">
           {navLinks.map((link) => (
-            <Link href={link.href}>{link.text}</Link>
+            <Link className="text-slate-700 hover:text-sky-600 transition" href={link.href}>{link.text}</Link>
           ))}
         </div>
-        <Button>Contact Me</Button>
+        <div className="flex items-center gap-2">
+          <Button size={"sm"}>Contact Me</Button>
+          <MobileMenu />
+        </div>
       </div>
     </nav>
   );
