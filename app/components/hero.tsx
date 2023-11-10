@@ -12,11 +12,11 @@ const Hero = () => {
           <h1
             className={`${eb_garamond.className} text-sky-900 dark:text-slate-50 text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-10 sm:leading-[3rem] lg:leading-[4rem] xl:leading-[4.5rem] font-semibold md:font-bold tracking-wide`}
           >
-            I'm Carlos Garcia, Project Manager and Full-Stack Developer
+            I'm Carlos Garcia, Project Manager and Full-Stack Developer.
           </h1>
           <div className="flex justify-center md:hidden">
             <Image
-              src="/person-transparent.png"
+              src="/person-transparent.jpg"
               alt="Carlos Garcia image"
               width={450}
               height={450}

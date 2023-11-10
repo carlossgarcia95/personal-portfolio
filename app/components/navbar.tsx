@@ -22,7 +22,13 @@ const navbar = () => {
         </Link>
         <div className="hidden md:flex justify-end gap-8 text-xz">
           {navLinks.map((link) => (
-            <Link className="text-slate-700 hover:text-sky-600 transition" href={link.href}>{link.text}</Link>
+            <Link
+              key={link.text}
+              className="text-slate-700 hover:text-sky-600 transition"
+              href={link.href}
+            >
+              {link.text}
+            </Link>
           ))}
         </div>
         <div className="flex items-center gap-2">

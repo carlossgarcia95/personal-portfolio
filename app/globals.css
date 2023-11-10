@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  hr {
+    @apply border-2 w-20;
+  }
+}
+
+@layer utilities {
+  .section-heading {
+    @apply text-sky-900 dark:text-slate-50 text-center text-2xl md:text-3xl font-semibold tracking-wide;
+  }
+
+  .section-text {
+    @apply;
+  }
+}
