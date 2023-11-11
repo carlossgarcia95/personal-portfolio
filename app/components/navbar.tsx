@@ -11,8 +11,9 @@ const navbar = () => {
   const navLinks: Navlink[] = [
     { text: "Home", href: "/#home" },
     { text: "About", href: "/#about" },
-    { text: "Projects", href: "/#projects" },
-    { text: "Experience", href: "/#experience" },
+    { text: "Skills", href: "/#skills" },
+    { text: "Portfolio", href: "/#projects" },
+    { text: "Education", href: "/#education" },
   ];
   return (
     <nav className="sticky border-b px-5 py-3">

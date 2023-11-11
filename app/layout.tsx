@@ -23,7 +23,7 @@ export default function RootLayout({
       >
         <ThemeContextProvider>
           <Navbar />
-          <main className="max-w-7xl mx-auto p-5">{children}</main>
+          <main className="mx-auto">{children}</main>
           <ThemeSwitch />
         </ThemeContextProvider>
       </body>

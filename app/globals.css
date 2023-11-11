@@ -22,4 +22,8 @@
   .section-text {
     @apply;
   }
+
+  .badge {
+    @apply bg-white border border-black rounded-xl px-5 py-1 dark:bg-white/10 dark:text-white/80
+  }
 }

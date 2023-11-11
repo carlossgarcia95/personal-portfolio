@@ -3,8 +3,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="bg-">
-      <div className="py-5 flex flex-col justify-center text-center">
+    <section id="about">
+      <div className="container py-5 flex flex-col justify-center text-center">
         <h2 className="section-heading">About Me</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <hr className="self-center mb-10" />
