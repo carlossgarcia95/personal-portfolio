@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Hero from "./components/hero";
 import About from "./components/about";
-import Skills from "./components/skills";
+import Contact from "./components/contact";
+import Hero from "./components/hero";
 import Portfolio from "./components/portfolio";
+import Skills from "./components/skills";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <About />
       <Skills />
       <Portfolio />
+      <Contact />
     </main>
   );
 }

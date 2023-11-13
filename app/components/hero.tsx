@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="container flex flex-col md:flex-row justify-between items-center">
-        <div className="flex-1 max-w-xl space-y-8">
+        <div className="flex-1 max-w-xl md:space-y-8">
           <h1
             className={`${eb_garamond.className} text-sky-900 dark:text-slate-50 text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-10 sm:leading-[3rem] lg:leading-[4rem] xl:leading-[4.5rem] font-semibold md:font-bold tracking-wide`}
           >

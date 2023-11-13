@@ -37,7 +37,7 @@ const SkillTabs = () => {
   ];
 
   return (
-    <Tabs defaultValue="account" className="w-[800px] self-center">
+    <Tabs defaultValue="account" className="w-full max-w-[800px] self-center">
       <TabsList className="grid w-full grid-cols-2">
         <TabsTrigger value="account">Project Management</TabsTrigger>
         <TabsTrigger value="password">Web Development</TabsTrigger>
