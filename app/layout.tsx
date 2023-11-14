@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 import ThemeSwitch from "./components/theme-switch";
+import { inter } from "./components/ui/fonts";
 import ThemeContextProvider from "./context/theme-context";
 import "./globals.css";
-import Navbar from "./components/navbar";
-import { inter } from "./components/ui/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,6 +25,7 @@ export default function RootLayout({
           <Navbar />
           <main className="mx-auto">{children}</main>
           <ThemeSwitch />
+          <Footer />
         </ThemeContextProvider>
       </body>
     </html>

@@ -49,7 +49,7 @@ const SkillTabs = () => {
           </CardHeader>
           <CardContent>
             <div>
-              <h3 className="text-xl text-left text-sky-900 font-medium mb-2">
+              <h3 className="text-xl text-left text-sky-900 dark:text-slate-50 font-medium mb-2">
                 Frameworks
               </h3>
               <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800 mb-6">
@@ -59,7 +59,7 @@ const SkillTabs = () => {
                   </li>
                 ))}
               </ul>
-              <h3 className="text-xl text-left text-sky-900 font-medium mb-2">
+              <h3 className="text-xl text-left text-sky-900 dark:text-slate-50 font-medium mb-2">
                 Tools and Technologies
               </h3>
               <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800">
@@ -80,7 +80,7 @@ const SkillTabs = () => {
             <CardTitle>Web Development</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
-            <h3 className="text-xl text-left text-sky-900 font-medium">
+            <h3 className="text-xl text-left text-sky-900 dark:text-slate-50 font-medium">
               Tools and Technologies
             </h3>
             <div className="space-y-1">

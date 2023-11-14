@@ -4,7 +4,7 @@ import ContactForm from "./contact-form";
 const Contact = () => {
   return (
     <section id="contact">
-      <div className="container py-5 flex flex-col justify-center text-center">
+      <div className="container py-10 flex flex-col justify-center text-center gap-6">
         <h2 className="section-heading">Contact</h2>
         <p>
           Send email to{" "}
@@ -13,7 +13,7 @@ const Contact = () => {
           </a>{" "}
           or fill out the form below.
         </p>
-        <hr className="self-center mb-10" />
+        <hr className="self-center" />
         <ContactForm />
       </div>
     </section>

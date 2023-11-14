@@ -37,7 +37,7 @@ export function ContactForm() {
   };
 
   return (
-    <div className="w-full max-w-lg text-left rounded-lg self-center">
+    <div className="w-full max-w-lg text-left rounded-lg self-center my-2">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <FormField

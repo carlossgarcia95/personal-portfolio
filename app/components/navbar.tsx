@@ -12,7 +12,7 @@ const navbar = () => {
     { text: "Home", href: "/#home" },
     { text: "About", href: "/#about" },
     { text: "Skills", href: "/#skills" },
-    { text: "Portfolio", href: "/#projects" },
+    { text: "Portfolio", href: "/#portfolio" },
     { text: "Education", href: "/#education" },
   ];
   return (
@@ -25,7 +25,7 @@ const navbar = () => {
           {navLinks.map((link) => (
             <Link
               key={link.text}
-              className="text-slate-700 hover:text-sky-600 transition"
+              className="transition"
               href={link.href}
             >
               {link.text}
