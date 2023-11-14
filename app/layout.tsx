@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import ThemeSwitch from "./components/theme-switch";
 import { inter } from "./components/ui/fonts";
 import ThemeContextProvider from "./context/theme-context";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Navbar />
           <main className="mx-auto">{children}</main>
           <ThemeSwitch />
+          <Toaster richColors/>
           <Footer />
         </ThemeContextProvider>
       </body>

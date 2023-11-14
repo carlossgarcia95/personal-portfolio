@@ -28,13 +28,13 @@ const Certifications = () => {
       <h3 className="text-xl text-sky-900 font-medium dark:text-slate-50 my-2">Certifications</h3>
       <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
         {certifications.map((item) => (
-          <div className="relative">
+          <div key={item.title} className="relative">
             <Image
               src={item.imageUrl}
               alt={item.title}
               width={400}
               height={400}
-              className="rounded-lg"
+              className="rounded-lg shadow-lg"
             />
             <Link href={item.credentialLink} target="_blank">
               <BiLinkExternal

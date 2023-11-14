@@ -36,7 +36,7 @@ const About = () => {
           </div>
 
           <div className="relative h-80 self-center col-span-full md:col-span-5 lg:col-span-3">
-            <div className="absolute left-2 bottom-2 h-80 w-full bg-blue-600 rounded-3xl shadow-xl" />
+            <div className="absolute left-2 bottom-2 h-80 w-full bg-teal-600 rounded-3xl shadow-xl" />
             <Image
               src="/laptop.jpg"
               alt="laptop"

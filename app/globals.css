@@ -10,13 +10,13 @@
     @apply text-xl;
   }
   hr {
-    @apply border-2 w-20;
+    @apply border-2 w-20 border-teal-600;
   }
 }
 
 @layer utilities {
   .section-heading {
-    @apply text-sky-900 dark:text-slate-50 text-center text-2xl md:text-3xl font-semibold tracking-wide;
+    @apply text-sky-800 dark:text-slate-50 text-center text-2xl md:text-3xl font-semibold tracking-wide;
   }
 
   .section-text {

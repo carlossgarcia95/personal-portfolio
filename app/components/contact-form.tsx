@@ -1,26 +1,24 @@
 "use client";
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
-
 import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
 } from "@/app/components/ui/form";
 import { Input } from "@/app/components/ui/input";
+import { zodResolver } from "@hookform/resolvers/zod";
+import axios from "axios";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { toast } from "sonner";
+import * as z from "zod";
+import { ContactFormSchema } from "../../lib/validationSchemas";
+import Spinner from "./spinner";
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
-
-const ContactFormSchema = z.object({
-  email: z.string().email({ message: "Invalid email address" }),
-  message: z.string().min(1, { message: "Field must not be empty" }),
-});
 
 export function ContactForm() {
   const form = useForm<z.infer<typeof ContactFormSchema>>({
@@ -31,8 +29,18 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = (formData: z.infer<typeof ContactFormSchema>) => {
-    toast.success("Your message has been sent successfully.");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const onSubmit = async (formData: z.infer<typeof ContactFormSchema>) => {
+    try {
+      setIsSubmitting(true);
+      const response = await axios.post("/api/sendEmail", formData);
+      if (response.status === 200)
+        toast.success("Your message has been sent successfully.");
+    } catch (error) {
+      toast.error("Something went wrong. " + error);
+    }
+    setIsSubmitting(false);
     form.reset();
   };
 
@@ -70,8 +78,9 @@ export function ContactForm() {
               </FormItem>
             )}
           />
-          <Button type="submit" className="">
+          <Button disabled={isSubmitting} type="submit">
             Submit
+            {isSubmitting && <Spinner />}
           </Button>
         </form>
       </Form>

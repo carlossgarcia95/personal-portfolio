@@ -39,7 +39,7 @@ const ProjectsCarousel = () => {
             src={project.imageUrl}
             alt="Burger"
             fill
-            className="object-fit rounded-xl"
+            className="object-fit rounded-lg"
           />
         </div>
       ))}
