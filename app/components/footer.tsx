@@ -8,7 +8,7 @@ const Footer = () => {
       </small>
       <p className="text-xs">
         <span className="font-semibold">About this website:</span> Designed and
-        developed by Crlos Garcia, built with React & Next.js, TypeScript,
+        developed by Carlos Garcia. Built with React & Next.js, TypeScript,
         Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.
       </p>
     </footer>

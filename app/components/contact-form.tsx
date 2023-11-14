@@ -79,7 +79,7 @@ export function ContactForm() {
             )}
           />
           <Button disabled={isSubmitting} type="submit">
-            Submit
+            Send Message
             {isSubmitting && <Spinner />}
           </Button>
         </form>
