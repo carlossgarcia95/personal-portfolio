@@ -1,4 +1,19 @@
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/app/components/ui/dialog";
 import Image from "next/image";
+import Link from "next/link";
+import { BiLinkExternal } from "react-icons/bi";
+import { Badge } from "./ui/badge";
+import { buttonVariants } from "./ui/button";
+import { Card } from "./ui/card";
+import { useState } from "react";
 
 const ProjectsCarousel = () => {
   const projectsData = [
@@ -31,17 +46,51 @@ const ProjectsCarousel = () => {
   return (
     <div className="carousel carousel-center space-x-2">
       {projectsData.map((project) => (
-        <div
-          key={project.title}
-          className="carousel-item relative aspect-video w-full lg:w-2/3 max-w-5xl hover:cursor-pointer"
-        >
-          <Image
-            src={project.imageUrl}
-            alt="Burger"
-            fill
-            className="object-fit rounded-lg"
-          />
-        </div>
+        <Dialog>
+          <DialogTrigger asChild>
+            <div
+              key={project.title}
+              className="carousel-item relative aspect-video w-5/6 lg:w-2/3 max-w-5xl hover:cursor-pointer"
+            >
+              <Image
+                src={project.imageUrl}
+                alt="Burger"
+                fill
+                className="object-fit rounded-lg"
+              />
+            </div>
+          </DialogTrigger>
+          <DialogContent className="max-w-2xl">
+            <DialogHeader>
+              <DialogTitle className="text-center mb-2">{project.title}</DialogTitle>
+              <Card className="relative aspect-video">
+                <Image
+                  src={project.imageUrl}
+                  alt={project.title}
+                  fill
+                  className="object-fit rounded-md"
+                />
+              </Card>
+              <DialogDescription className="pt-2">{project.description}</DialogDescription>
+            </DialogHeader>
+            <ul className="flex flex-wrap gap-2">
+              {project.tags.map((tag, index) => (
+                <Badge key={index}>{tag}</Badge>
+              ))}
+            </ul>
+            <Link
+              href={project.projectUrl}
+              className={buttonVariants({
+                variant: "default",
+                className: "gap-1",
+              })}
+              target="_blank"
+            >
+              Visit Site
+              <BiLinkExternal size={16} />
+            </Link>
+          </DialogContent>
+        </Dialog>
       ))}
     </div>
   );

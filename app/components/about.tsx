@@ -10,7 +10,7 @@ const About = () => {
         <hr className="self-center" />
         <div className="grid grid-cols-10 gap-8">
           {/* Left Container */}
-          <div className="flex flex-col lg:flex-row col-span-full md:col-span-5 lg:col-span-7 gap-8 items-center">
+          <div className="flex flex-col lg:flex-row col-span-full mb-2 md:mb-0 md:col-span-5 lg:col-span-7 gap-4 md:gap-8 items-center">
             <div className="flex-1 flex-col space-y-4">
               <h3 className="text-xl text-sky-900 font-medium dark:text-slate-50">
                 Project Management
@@ -36,12 +36,12 @@ const About = () => {
           </div>
 
           <div className="relative h-80 self-center col-span-full md:col-span-5 lg:col-span-3">
-            <div className="absolute left-2 bottom-2 h-80 w-full bg-teal-600 rounded-3xl shadow-xl" />
+            <div className="absolute left-2 bottom-2 h-80 w-full bg-teal-600 rounded-lg shadow-xl" />
             <Image
               src="/laptop.jpg"
               alt="laptop"
               fill
-              className="object-cover rounded-3xl"
+              className="object-cover rounded-lg"
             />
           </div>
         </div>

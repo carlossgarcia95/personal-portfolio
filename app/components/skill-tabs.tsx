@@ -9,10 +9,18 @@ import {
   CardTitle,
 } from "@/app/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Badge } from "./ui/badge";
 
 const SkillTabs = () => {
   const pmFrameworks = ["Waterfall", "Agile", "Scrum", "Kanban", "SAFe"];
-  const pmTechnologies = ["MS Project", "Jira", "Service Now", "Tableau", "MS Suite", "G Suite"];
+  const pmTechnologies = [
+    "MS Project",
+    "Jira",
+    "Service Now",
+    "Tableau",
+    "MS Suite",
+    "G Suite",
+  ];
 
   const devSkills = [
     "HTML",
@@ -54,9 +62,7 @@ const SkillTabs = () => {
               </h3>
               <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800 mb-6">
                 {pmFrameworks.map((skill, index) => (
-                  <li className="badge" key={index}>
-                    {skill}
-                  </li>
+                  <Badge key={index}>{skill}</Badge>
                 ))}
               </ul>
               <h3 className="text-xl text-left text-sky-900 dark:text-slate-50 font-medium mb-2">
@@ -64,9 +70,7 @@ const SkillTabs = () => {
               </h3>
               <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800">
                 {pmTechnologies.map((skill, index) => (
-                  <li className="badge" key={index}>
-                    {skill}
-                  </li>
+                  <Badge key={index}>{skill}</Badge>
                 ))}
               </ul>
             </div>
@@ -86,9 +90,7 @@ const SkillTabs = () => {
             <div className="space-y-1">
               <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800">
                 {devSkills.map((skill, index) => (
-                  <li className="badge" key={index}>
-                    {skill}
-                  </li>
+                  <Badge key={index}>{skill}</Badge>
                 ))}
               </ul>
             </div>
