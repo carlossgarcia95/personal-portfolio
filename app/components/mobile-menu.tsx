@@ -4,38 +4,30 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/app/components/ui/sheet";
+import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Navlink } from "./navbar";
 import { Button } from "./ui/button";
 
-const MobileMenu = () => {
+const MobileMenu = ({ navlinks }: { navlinks: Navlink[] }) => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant={"ghost"} size={"sm"} className="block md:hidden">
-          <RxHamburgerMenu />
-        </Button>
+        <RxHamburgerMenu
+          size={30}
+          className="block hover:cursor-pointer md:hidden "
+        />
       </SheetTrigger>
       <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
-          <SheetDescription>
-            Make changes to your profile here. Click save when you're done.
-          </SheetDescription>
-        </SheetHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4"></div>
+        <div className="flex flex-col gap-6 mt-8 items-end">
+          {navlinks.map((link) => (
+            <SheetClose asChild>
+              <Link href={link.href}>{link.text}</Link>
+            </SheetClose>
+          ))}
         </div>
-        <SheetFooter>
-          <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
-          </SheetClose>
-        </SheetFooter>
       </SheetContent>
     </Sheet>
   );
