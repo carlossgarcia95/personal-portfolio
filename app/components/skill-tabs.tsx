@@ -2,7 +2,7 @@ import {
   Card,
   CardContent,
   CardHeader,
-  CardTitle
+  CardTitle,
 } from "@/app/components/ui/card";
 import { Badge } from "./ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
@@ -28,6 +28,7 @@ const SkillTabs = () => {
     "Node.js",
     "Git",
     "Tailwind",
+    "Figma",
     "Prisma",
     "MongoDB",
     "Redux",
@@ -35,7 +36,7 @@ const SkillTabs = () => {
     "MySQL",
     "Python",
     "Flask",
-    "Framer Motion",
+    "Framer",
     "Google Analytics",
   ];
 

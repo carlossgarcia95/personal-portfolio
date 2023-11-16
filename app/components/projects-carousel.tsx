@@ -4,7 +4,7 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger
+  DialogTrigger,
 } from "@/app/components/ui/dialog";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,24 +18,51 @@ const ProjectsCarousel = () => {
     {
       title: "Red Taco Shop",
       description:
-        "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-      tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+        "My first formal client, I designed and developed Red Taco Shop's website, incorporating Google Analytics for website traffic monitoring and Framer for advanced animations.",
+      tags: [
+        "React",
+        "Next.js",
+        "Typescript",
+        "Tailwind",
+        "Google Analytics",
+        "Framer",
+      ],
       imageUrl: "/red-taco-shop.jpg",
       projectUrl: "https://red-taco-shop.vercel.app/",
     },
     {
       title: "iStore",
       description:
-        "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-      tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+        "An ecommerce website that sells apple products, has it's own cart system, user authentication and is integrated with Stripe checkout.",
+      tags: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "MongoDB",
+        "Prisma",
+        "React Query",
+        "NextAuth",
+        "Stripe",
+      ],
       imageUrl: "/iStore.jpg",
       projectUrl: "https://istore-shopping.vercel.app/",
     },
     {
       title: "Issue Tracker",
       description:
-        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-      tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+        "An application for creating, tracking and assigning issues. Includes visualization dashboard to help manage issues.",
+      tags: [
+        "React",
+        "Next.js",
+        "Typescript",
+        "Tailwind",
+        "MySQL",
+        "Prisma",
+        "NextAuth",
+        "Zod",
+        "Recharts",
+      ],
       imageUrl: "/issue-tracker.jpg",
       projectUrl: "https://issue-tracker-two-sigma.vercel.app/",
     },

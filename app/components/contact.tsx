@@ -13,7 +13,7 @@ const Contact = () => {
           </a>{" "}
           or fill out the form below.
         </p>
-        <hr className="self-center" />
+        <hr className="self-center mb-6" />
         <ContactForm />
       </div>
     </section>

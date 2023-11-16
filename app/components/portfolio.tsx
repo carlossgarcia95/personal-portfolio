@@ -5,8 +5,8 @@ const Portfolio = () => {
     <section id="portfolio">
       <div className="py-10 flex flex-col justify-center text-center gap-6">
         <h2 className="section-heading">Portfolio</h2>
-        <p>Take a peak at some of my previous work</p>
-        <hr className="self-center" />
+        <p>Take a peak at some of my previous work.</p>
+        <hr className="self-center mb-12" />
         <ProjectsCarousel />
       </div>
     </section>

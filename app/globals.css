@@ -10,7 +10,7 @@
     @apply text-xl;
   }
   hr {
-    @apply border-2 w-20 border-teal-600;
+    @apply border-2 w-20 rounded-full;
   }
 }
 

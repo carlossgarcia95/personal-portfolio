@@ -11,16 +11,16 @@ import { eb_garamond } from "./ui/fonts";
 
 const Hero = () => {
   return (
-    <section className="bg-teal-50/60">
+    <section className="">
       <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-0">
         <div className="flex-1 max-w-xl space-y-4 xl:ml-4 md:space-y-5 lg:space-y-8">
           <h1
-            className={`${eb_garamond.className} text-sky-800 dark:text-slate-50 text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-10 sm:leading-[3rem] lg:leading-[4rem] xl:leading-[4.5rem] font-medium md:font-bold tracking-wide`}
+            className={`${eb_garamond.className} text-sky-800 dark:text-slate-50 text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-10 sm:leading-[3rem] lg:leading-[4rem] xl:leading-[4.5rem] font-bold tracking-wide`}
           >
             I&apos;m Carlos Garcia, Project Manager and Full-Stack Developer.
           </h1>
           <div className="relative flex justify-center md:hidden">
-            <div className="absolute right-4 top-16 gap-2 text-teal-600 lg:hidden">
+            <div className="absolute z-10 right-0 top-6 gap-2 lg:hidden">
               <Link
                 href="https://www.linkedin.com/in/carlossgarcia95/"
                 target="_blank"
@@ -31,13 +31,14 @@ const Hero = () => {
                 <AiFillGithub size={40} />
               </Link>
             </div>
-            <Image
-              src="/person-transparent.jpg"
-              alt="Carlos Garcia image"
-              width={450}
-              height={450}
-              className="self-center relative"
-            />
+            <div className="relative h-[300px] sm:h-[450px] aspect-square">
+              <Image
+                src="/person-transparent.jpg"
+                alt="Carlos Garcia image"
+                fill
+                className="self-center relative"
+              />
+            </div>
           </div>
           <p className="text-center text-lg md:text-xl lg:text-2xl font-medium md:text-left">
             I can <span className="font-bold text-sky-700">manage</span> your
@@ -56,14 +57,14 @@ const Hero = () => {
               <AiOutlineArrowRight className="h-4 w-4 ml-1" />
             </Link>
             <a
-              href="/Resume-carlos-garcia.pdf"
+              href="/resume-carlos-garcia.pdf"
               className={buttonVariants({ variant: "secondary" })}
               download
             >
               Download CV
               <AiOutlineDownload className="h-5 w-5 ml-1" />
             </a>
-            <div className="hidden gap-2 text-teal-600 lg:flex">
+            <div className="hidden gap-2 lg:flex">
               <Link
                 href="https://www.linkedin.com/in/carlossgarcia95/"
                 target="_blank"
@@ -77,8 +78,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden relative aspect-square flex-1 max-w-2xl md:block mt-4">
-          <div className="absolute top-12 right-0 gap-2 text-teal-600 lg:hidden">
+        <div className="hidden relative aspect-square flex-1 max-w-[725px] md:block mt-4">
+          <div className="absolute top-12 right-0 gap-2 lg:hidden">
             <Link
               href="https://www.linkedin.com/in/carlossgarcia95/"
               target="_blank"
@@ -90,7 +91,7 @@ const Hero = () => {
             </Link>
           </div>
           <Image
-            src="/person-transparent.png"
+            src="/person-transparent.jpg"
             alt="Carlos Garcia image"
             fill
             className="object-contain"

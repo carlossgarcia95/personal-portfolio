@@ -3,11 +3,11 @@ import SkillTabs from "./skill-tabs";
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-teal-600/30">
+    <section id="skills" className="">
       <div className="container py-10 flex flex-col justify-center text-center gap-6">
         <h2 className="section-heading">Skills</h2>
-        <p>Fully billingual in English and Español</p>
-        <hr className="self-center" />
+        <p>Professional with business and technical acumen.</p>
+        <hr className="self-center mb-12" />
         <SkillTabs />
         <Certifications />
       </div>

@@ -54,10 +54,10 @@ const Experience = () => {
   const { theme } = useTheme();
   return (
     <section id="experience">
-      <div className="container py-10 flex flex-col justify-center text-center gap-6">
+      <div className="container py-10 md:pb-2 flex flex-col justify-center text-center gap-6">
         <h2 className="section-heading">Experience</h2>
-        <p>Working with technology teams to deliver value</p>
-        <hr className="self-center" />
+        <p>Working with technology teams to deliver value.</p>
+        <hr className="self-center mb-6" />
 
         <VerticalTimeline lineColor="#9ca3af">
           {experiencesData.map((item, index) => (
