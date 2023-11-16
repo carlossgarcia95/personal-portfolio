@@ -16,7 +16,7 @@ const navbar = () => {
     { text: "Portfolio", href: "/#portfolio" },
   ];
   return (
-    <nav className="bg-teal-50/60 px-5 py-3">
+    <nav id="home" className="bg-teal-50/60 px-5 py-3">
       <div className="flex max-w-7xl mx-auto justify-between items-center">
         <Link href="/" className="text-3xl font-normal text-teal-600">
           CG

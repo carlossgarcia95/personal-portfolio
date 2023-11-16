@@ -69,7 +69,7 @@ export function ContactForm() {
                 <FormLabel className="font-bold">Message</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Leave us a message...."
+                    placeholder="Leave a message...."
                     className="resize-none"
                     {...field}
                   />

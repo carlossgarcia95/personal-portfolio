@@ -2,10 +2,9 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
+  DialogTrigger
 } from "@/app/components/ui/dialog";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +12,6 @@ import { BiLinkExternal } from "react-icons/bi";
 import { Badge } from "./ui/badge";
 import { buttonVariants } from "./ui/button";
 import { Card } from "./ui/card";
-import { useState } from "react";
 
 const ProjectsCarousel = () => {
   const projectsData = [
@@ -46,7 +44,7 @@ const ProjectsCarousel = () => {
   return (
     <div className="carousel carousel-center space-x-2">
       {projectsData.map((project) => (
-        <Dialog>
+        <Dialog key={project.title}>
           <DialogTrigger asChild>
             <div
               key={project.title}
@@ -62,7 +60,9 @@ const ProjectsCarousel = () => {
           </DialogTrigger>
           <DialogContent className="max-w-2xl">
             <DialogHeader>
-              <DialogTitle className="text-center mb-2">{project.title}</DialogTitle>
+              <DialogTitle className="text-center mb-2">
+                {project.title}
+              </DialogTitle>
               <Card className="relative aspect-video">
                 <Image
                   src={project.imageUrl}
@@ -71,7 +71,9 @@ const ProjectsCarousel = () => {
                   className="object-fit rounded-md"
                 />
               </Card>
-              <DialogDescription className="pt-2">{project.description}</DialogDescription>
+              <DialogDescription className="pt-2">
+                {project.description}
+              </DialogDescription>
             </DialogHeader>
             <ul className="flex flex-wrap gap-2">
               {project.tags.map((tag, index) => (

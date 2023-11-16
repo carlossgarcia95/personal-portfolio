@@ -14,28 +14,40 @@ import { useTheme } from "../context/theme-context";
 const Experience = () => {
   const experiencesData = [
     {
-      title: "Graduated bootcamp",
-      location: "Miami, FL",
-      description:
-        "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-      icon: React.createElement(LuGraduationCap),
-      date: "2019",
-    },
-    {
-      title: "Front-End Developer",
-      location: "Orlando, FL",
-      description:
-        "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-      icon: React.createElement(CgWorkAlt),
-      date: "2019 - 2021",
-    },
-    {
       title: "Full-Stack Developer",
-      location: "Houston, TX",
+      company: "Freelance",
+      location: "San Diego, CA",
       description:
-        "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+        "Designed and developed Red Taco Shop website. Offer web development services to small and medium size businesses.",
       icon: React.createElement(FaReact),
-      date: "2021 - present",
+      date: "Apr 2023 - Present",
+    },
+    {
+      title: "Project Manager II",
+      company: "FICO",
+      location: "San Diego, CA",
+      description:
+        "Manage the entire lifecycle for projects ranging from internal efforts to full client implementations. Demand, resource and backlog management for two product verticals. Over 20+ project delievered successfully.",
+      icon: React.createElement(CgWorkAlt),
+      date: "Feb 2020 - Present",
+    },
+    {
+      title: "Project Manager",
+      company: "Salud Digna",
+      location: "Culiacan, Mexico",
+      description:
+        "Led and coordinated team in obtaining the coveted, world-renowned CAP Accreditation, acting as a liaison between stakeholders and project team members. Implemented PMBOK standards.",
+      icon: React.createElement(CgWorkAlt),
+      date: "Jan 2019 - Jan 2020",
+    },
+    {
+      title: "Quality Engineer",
+      company: "Insertech",
+      location: "Culiacan, Mexico",
+      description:
+        "Provided support and solutions to quality related problems within the organization. Reduced quality alert incidents by 21%.",
+      icon: React.createElement(CgWorkAlt),
+      date: "Aug 2018 - Dic 2018",
     },
   ];
 
@@ -44,13 +56,14 @@ const Experience = () => {
     <section id="experience">
       <div className="container py-10 flex flex-col justify-center text-center gap-6">
         <h2 className="section-heading">Experience</h2>
-        <p>sldkjf lksjdlkf lskjdlksj flksjdf</p>
+        <p>Working with technology teams to deliver value</p>
         <hr className="self-center" />
 
-        <VerticalTimeline lineColor="" >
+        <VerticalTimeline lineColor="#9ca3af">
           {experiencesData.map((item, index) => (
             <React.Fragment key={index}>
-              <VerticalTimelineElement visible={true}
+              <VerticalTimelineElement
+                visible={true}
                 contentStyle={{
                   background:
                     theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
@@ -74,7 +87,8 @@ const Experience = () => {
                 }}
               >
                 <h3 className="font-semibold capitalize">{item.title}</h3>
-                <p className="font-normal !mt-0">{item.location}</p>
+                <p className="!font-normal !mt-0">{item.company}</p>
+                <p className="!font-light !mt-0">{item.location}</p>
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                   {item.description}
                 </p>

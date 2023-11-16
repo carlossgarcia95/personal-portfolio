@@ -1,23 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineArrowRight,
+  AiOutlineDownload,
+} from "react-icons/ai";
 import { buttonVariants } from "./ui/button";
 import { eb_garamond } from "./ui/fonts";
-import {
-  AiFillLinkedin,
-  AiFillGithub,
-  AiOutlineDownload,
-  AiOutlineArrowRight,
-} from "react-icons/ai";
 
 const Hero = () => {
   return (
-    <section id="hero" className="bg-teal-50/60">
+    <section className="bg-teal-50/60">
       <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-0">
         <div className="flex-1 max-w-xl space-y-4 xl:ml-4 md:space-y-5 lg:space-y-8">
           <h1
             className={`${eb_garamond.className} text-sky-800 dark:text-slate-50 text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-10 sm:leading-[3rem] lg:leading-[4rem] xl:leading-[4.5rem] font-medium md:font-bold tracking-wide`}
           >
-            I'm Carlos Garcia, Project Manager and Full-Stack Developer.
+            I&apos;m Carlos Garcia, Project Manager and Full-Stack Developer.
           </h1>
           <div className="relative flex justify-center md:hidden">
             <div className="absolute right-4 top-16 gap-2 text-teal-600 lg:hidden">
@@ -83,7 +83,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/carlossgarcia95/"
               target="_blank"
             >
-              <AiFillLinkedin size={40} className="mb-4"/>
+              <AiFillLinkedin size={40} className="mb-4" />
             </Link>
             <Link href="https://github.com/carlossgarcia95" target="_blank">
               <AiFillGithub size={40} />

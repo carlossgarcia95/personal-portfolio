@@ -1,15 +1,11 @@
-import React from "react";
-import { Button } from "./ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
-  CardTitle,
+  CardTitle
 } from "@/app/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Badge } from "./ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 const SkillTabs = () => {
   const pmFrameworks = ["Waterfall", "Agile", "Scrum", "Kanban", "SAFe"];
@@ -35,13 +31,12 @@ const SkillTabs = () => {
     "Prisma",
     "MongoDB",
     "Redux",
-    "GraphQL",
-    "Apollo",
     "Express",
-    "PostgreSQL",
+    "MySQL",
     "Python",
-    "Django",
+    "Flask",
     "Framer Motion",
+    "Google Analytics",
   ];
 
   return (
