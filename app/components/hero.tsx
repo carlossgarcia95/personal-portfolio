@@ -11,7 +11,21 @@ import { eb_garamond } from "./ui/fonts";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-b from-slate-50 via-teal-100/50 to-teal-200/50 dark:from-slate-900 dark:to-slate-950">
+    <section className="relative bg-gradient-to-b from-slate-50 via-teal-100/50 to-teal-200/50 dark:from-slate-900 dark:to-slate-950">
+      <div className="absolute bg-slate-50 dark:bg-slate-800 text-blue-900 dark:text-white top-1/3 right-0">
+        <Link
+          href="https://www.linkedin.com/in/carlossgarcia95/"
+          target="_blank"
+        >
+          <AiFillLinkedin
+            size={50}
+            className="mb-3 h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] lg:h-[50px] lg:w-[50px]"
+          />
+        </Link>
+        <Link href="https://github.com/carlossgarcia95" target="_blank">
+          <AiFillGithub className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] lg:h-[50px] lg:w-[50px]" />
+        </Link>
+      </div>
       <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-0">
         <div className="flex-1 max-w-xl xl:ml-4 space-y-5 lg:space-y-8">
           <h1
@@ -20,37 +34,26 @@ const Hero = () => {
             I&apos;m Carlos Garcia, Project Manager and Full-Stack Developer.
           </h1>
           <div className="relative flex justify-center md:hidden">
-            <div className="absolute z-10 text-blue-900 dark:text-blue-500 dark:brightness-110 right-0 top-6 gap-2 lg:hidden">
-              <Link
-                href="https://www.linkedin.com/in/carlossgarcia95/"
-                target="_blank"
-              >
-                <AiFillLinkedin size={40} className="mb-4" />
-              </Link>
-              <Link href="https://github.com/carlossgarcia95" target="_blank">
-                <AiFillGithub size={40} />
-              </Link>
-            </div>
             <div className="relative h-[300px] sm:h-[450px] aspect-square">
               <Image
                 src="/person-transparent.jpg"
                 alt="Carlos Garcia image"
                 fill
-                className="self-center relative"
+                className="self-center relative object-contain rounded-full"
               />
             </div>
           </div>
           <p className="text-center text-lg md:text-xl lg:text-2xl font-medium md:text-left">
             I can{" "}
-            <span className="font-extrabold text-blue-900 dark:text-blue-500 dark:brightness-110">
+            <span className="font-extrabold text-blue-900 dark:text-slate-50 dark:brightness-110">
               manage
             </span>{" "}
             your project,{" "}
-            <span className="font-extrabold text-blue-900  dark:text-blue-500 dark:brightness-110">
+            <span className="font-extrabold text-blue-900  dark:text-slate-50 dark:brightness-110">
               code
             </span>{" "}
             your solution and{" "}
-            <span className="font-extrabold text-blue-900  dark:text-blue-500 dark:brightness-110">
+            <span className="font-extrabold text-blue-900  dark:text-slate-50 dark:brightness-110">
               implement
             </span>{" "}
             your idea.
@@ -73,32 +76,10 @@ const Hero = () => {
               Download CV
               <AiOutlineDownload className="h-5 w-5 ml-1" />
             </a>
-            <div className="hidden gap-2 text-blue-900 dark:text-blue-500 dark:brightness-110 lg:flex">
-              <Link
-                href="https://www.linkedin.com/in/carlossgarcia95/"
-                target="_blank"
-              >
-                <AiFillLinkedin size={40} />
-              </Link>
-              <Link href="https://github.com/carlossgarcia95" target="_blank">
-                <AiFillGithub size={40} />
-              </Link>
-            </div>
           </div>
         </div>
 
         <div className="hidden relative aspect-square flex-1 max-w-[700px] md:block mt-4">
-          <div className="absolute text-blue-900  top-12 right-0 gap-2 lg:hidden">
-            <Link
-              href="https://www.linkedin.com/in/carlossgarcia95/"
-              target="_blank"
-            >
-              <AiFillLinkedin size={40} className="mb-4" />
-            </Link>
-            <Link href="https://github.com/carlossgarcia95" target="_blank">
-              <AiFillGithub size={40} />
-            </Link>
-          </div>
           <Image
             src="/person-transparent.jpg"
             alt="Carlos Garcia image"

@@ -27,14 +27,17 @@ const navbar = () => {
             </Link>
           ))}
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center">
           <Link
             href="/#contact"
-            className={buttonVariants({ variant: "default" })}
+            className={buttonVariants({
+              variant: "default",
+              className: "hidden md:flex",
+            })}
           >
             Contact Me
           </Link>
-          <MobileMenu navlinks={navlinks}/>
+          <MobileMenu navlinks={navlinks} />
         </div>
       </div>
     </nav>
