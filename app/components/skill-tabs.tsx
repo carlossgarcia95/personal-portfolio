@@ -50,9 +50,9 @@ const SkillTabs = () => {
         <TabsTrigger value="webDevelopment">Web Development</TabsTrigger>
       </TabsList>
       <TabsContent value="projectManagement">
-        <Card>
+        <Card className="dark:bg-slate-800">
           <CardHeader>
-            <CardTitle>Project Management</CardTitle>
+            <CardTitle className="font-medium">Project Management</CardTitle>
           </CardHeader>
           <CardContent>
             <div>
@@ -78,9 +78,9 @@ const SkillTabs = () => {
         </Card>
       </TabsContent>
       <TabsContent value="webDevelopment">
-        <Card>
+        <Card className="dark:bg-slate-800">
           <CardHeader>
-            <CardTitle>Web Development</CardTitle>
+            <CardTitle className="font-medium">Web Development</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
             <h3 className="text-xl text-left text-blue-900 dark:text-slate-50 font-medium">

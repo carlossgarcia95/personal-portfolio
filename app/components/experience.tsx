@@ -1,15 +1,15 @@
 "use client";
 
 import React from "react";
-import { LuGraduationCap } from "react-icons/lu";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { useTheme } from "../context/theme-context";
+import { titillium_web } from "./ui/fonts";
 
 const Experience = () => {
   const experiencesData = [
@@ -55,7 +55,9 @@ const Experience = () => {
   return (
     <section id="experience">
       <div className="container py-8 flex flex-col justify-center text-center gap-3 md:gap-6">
-        <h2 className="section-heading">Experience</h2>
+        <h2 className={`${titillium_web.className} section-heading`}>
+          Experience
+        </h2>
         <p>Working with technology teams to deliver value.</p>
         <hr className="self-center mt-4" />
 
@@ -65,8 +67,7 @@ const Experience = () => {
               <VerticalTimelineElement
                 visible={true}
                 contentStyle={{
-                  background:
-                    theme === "light" ? "#ffffff" : "rgba(255, 255, 255, 0.05)",
+                  background: theme === "light" ? "#ffffff" : "#1e293b",
                   boxShadow: "none",
                   border: "1px solid rgba(0, 0, 0, 0.05)",
                   textAlign: "left",
@@ -82,13 +83,13 @@ const Experience = () => {
                 icon={item.icon}
                 iconStyle={{
                   background:
-                    theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                    theme === "light" ? "white" : "rgba(255, 255, 255, 0",
                   fontSize: "1.5rem",
                 }}
               >
                 <h3 className="font-semibold capitalize">{item.title}</h3>
                 <p className="!font-normal !mt-0">{item.company}</p>
-                <p className="!font-light !mt-0">{item.location}</p>
+                <p className="!font-normal !mt-0">{item.location}</p>
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                   {item.description}
                 </p>

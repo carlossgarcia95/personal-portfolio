@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import { titillium_web } from "./ui/fonts";
 
 const About = () => {
   return (
     <section id="about">
       <div className="container py-8 flex flex-col text-center gap-3 md:gap-6 max-w-7xl">
-        <h2 className="section-heading">About Me</h2>
+        <h2 className={`${titillium_web.className} section-heading`}>
+          About Me
+        </h2>
         <p>Life-long learner and technology enthusiast.</p>
         <hr className="self-center my-4" />
         <div className="flex flex-col space-between md:flex-row gap-10">

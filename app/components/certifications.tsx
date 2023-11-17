@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
-import { BiLinkExternal } from "react-icons/bi";
 import Link from "next/link";
+import { BiLinkExternal } from "react-icons/bi";
 import { Card } from "./ui/card";
+import { titillium_web } from "./ui/fonts";
 
 const Certifications = () => {
   const certifications = [
@@ -26,7 +26,9 @@ const Certifications = () => {
   ];
   return (
     <>
-      <h3 className="section-heading my-6">Certifications</h3>
+      <h3 className={`${titillium_web.className} section-heading my-6`}>
+        Certifications
+      </h3>
       <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
         {certifications.map((item) => (
           <Card key={item.title} className="relative">

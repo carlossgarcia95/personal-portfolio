@@ -15,7 +15,7 @@ const navbar = () => {
     { text: "Portfolio", href: "/#portfolio" },
   ];
   return (
-    <nav id="home" className="px-5 pt-5">
+    <nav id="home" className="px-5 pt-5 dark:bg-slate-950">
       <div className="flex max-w-7xl mx-auto justify-between items-center">
         <Link href="/" className="text-3xl font-normal">
           CG
