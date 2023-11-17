@@ -54,19 +54,19 @@ const Experience = () => {
   const { theme } = useTheme();
   return (
     <section id="experience">
-      <div className="container py-10 md:pb-2 flex flex-col justify-center text-center gap-6">
+      <div className="container py-8 flex flex-col justify-center text-center gap-3 md:gap-6">
         <h2 className="section-heading">Experience</h2>
         <p>Working with technology teams to deliver value.</p>
-        <hr className="self-center mb-6" />
+        <hr className="self-center mt-4" />
 
-        <VerticalTimeline lineColor="#9ca3af">
+        <VerticalTimeline lineColor="">
           {experiencesData.map((item, index) => (
             <React.Fragment key={index}>
               <VerticalTimelineElement
                 visible={true}
                 contentStyle={{
                   background:
-                    theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                    theme === "light" ? "#ffffff" : "rgba(255, 255, 255, 0.05)",
                   boxShadow: "none",
                   border: "1px solid rgba(0, 0, 0, 0.05)",
                   textAlign: "left",

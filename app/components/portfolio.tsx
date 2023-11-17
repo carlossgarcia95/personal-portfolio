@@ -2,11 +2,11 @@ import ProjectsCarousel from "./projects-carousel";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio">
-      <div className="py-10 flex flex-col justify-center text-center gap-6">
-        <h2 className="section-heading">Portfolio</h2>
-        <p>Take a peak at some of my previous work.</p>
-        <hr className="self-center mb-12" />
+    <section id="portfolio" className="bg-slate-900 dark:bg-slate-950">
+      <div className="py-8 flex flex-col justify-center text-center gap-3 md:gap-6">
+        <h2 className="section-heading !text-slate-50">Portfolio</h2>
+        <p className="text-slate-50">Take a peak at some of my previous work.</p>
+        <hr className="self-center mt-4 mb-5" />
         <ProjectsCarousel />
       </div>
     </section>

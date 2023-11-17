@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} antialiased bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
+        className={`${inter.className} antialiased bg-slate-50 text-slate-900 font-medium dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
       >
         <ThemeContextProvider>
           <Navbar />

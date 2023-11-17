@@ -4,15 +4,15 @@ import Link from "next/link";
 const About = () => {
   return (
     <section id="about">
-      <div className="container py-10 flex flex-col text-center gap-6 max-w-7xl">
+      <div className="container py-8 flex flex-col text-center gap-3 md:gap-6 max-w-7xl">
         <h2 className="section-heading">About Me</h2>
         <p>Life-long learner and technology enthusiast.</p>
-        <hr className="self-center mb-10" />
+        <hr className="self-center my-4" />
         <div className="flex flex-col space-between md:flex-row gap-10">
           {/* Left Container */}
-          <div className="flex-1 flex-col max-w-xl mx-auto items-center space-y-8">
+          <div className="flex-1 flex-col max-w-xl mx-auto items-center space-y-6 md:space-y-10">
             <div className="flex-col space-y-1">
-              <h3 className="text-xl text-left text-sky-900 font-medium dark:text-slate-50">
+              <h3 className="text-xl text-left text-blue-900 font-medium dark:text-slate-50">
                 Project Management
               </h3>
               <p className="text-left">
@@ -25,7 +25,7 @@ const About = () => {
               </p>
             </div>
             <div className="flex-col space-y-1">
-              <h3 className="text-xl text-left text-sky-900 font-medium dark:text-slate-50">
+              <h3 className="text-xl text-left text-blue-900 font-medium dark:text-slate-50">
                 Web Development
               </h3>
               <p className="text-left">
@@ -47,7 +47,7 @@ const About = () => {
           </div>
 
           <div className="hidden md:block relative h-96 w-5/12 self-center">
-            <div className="absolute left-2 bottom-2 h-80 w-full rounded-lg shadow-xl" />
+            <div className="absolute left-3 bottom-3 h-96 w-full bg-teal-600 rounded-lg shadow-xl" />
             <Image
               src="/about-img.jpg"
               alt="laptop"

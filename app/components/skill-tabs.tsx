@@ -41,19 +41,22 @@ const SkillTabs = () => {
   ];
 
   return (
-    <Tabs defaultValue="account" className="w-full max-w-[800px] self-center">
+    <Tabs
+      defaultValue="projectManagement"
+      className="w-full max-w-[800px] self-center"
+    >
       <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="account">Project Management</TabsTrigger>
-        <TabsTrigger value="password">Web Development</TabsTrigger>
+        <TabsTrigger value="projectManagement">Project Management</TabsTrigger>
+        <TabsTrigger value="webDevelopment">Web Development</TabsTrigger>
       </TabsList>
-      <TabsContent value="account">
+      <TabsContent value="projectManagement">
         <Card>
           <CardHeader>
             <CardTitle>Project Management</CardTitle>
           </CardHeader>
           <CardContent>
             <div>
-              <h3 className="text-xl text-left text-sky-900 dark:text-slate-50 font-medium mb-2">
+              <h3 className="text-xl text-left text-blue-900 dark:text-slate-50 font-medium mb-2">
                 Frameworks
               </h3>
               <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800 mb-6">
@@ -61,7 +64,7 @@ const SkillTabs = () => {
                   <Badge key={index}>{skill}</Badge>
                 ))}
               </ul>
-              <h3 className="text-xl text-left text-sky-900 dark:text-slate-50 font-medium mb-2">
+              <h3 className="text-xl text-left text-blue-900 dark:text-slate-50 font-medium mb-2">
                 Tools and Technologies
               </h3>
               <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800">
@@ -74,13 +77,13 @@ const SkillTabs = () => {
           </CardContent>
         </Card>
       </TabsContent>
-      <TabsContent value="password">
+      <TabsContent value="webDevelopment">
         <Card>
           <CardHeader>
             <CardTitle>Web Development</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
-            <h3 className="text-xl text-left text-sky-900 dark:text-slate-50 font-medium">
+            <h3 className="text-xl text-left text-blue-900 dark:text-slate-50 font-medium">
               Tools and Technologies
             </h3>
             <div className="space-y-1">

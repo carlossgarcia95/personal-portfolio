@@ -11,16 +11,16 @@ import { eb_garamond } from "./ui/fonts";
 
 const Hero = () => {
   return (
-    <section className="">
+    <section className="bg-gradient-to-b from-slate-50 via-teal-100/50 to-teal-200/50 dark:from-slate-900 dark:to-slate-950">
       <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-0">
-        <div className="flex-1 max-w-xl space-y-4 xl:ml-4 md:space-y-5 lg:space-y-8">
+        <div className="flex-1 max-w-xl xl:ml-4 space-y-5 lg:space-y-8">
           <h1
-            className={`${eb_garamond.className} text-sky-800 dark:text-slate-50 text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-10 sm:leading-[3rem] lg:leading-[4rem] xl:leading-[4.5rem] font-bold tracking-wide`}
+            className={`${eb_garamond.className} text-blue-900 dark:text-slate-50 text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-10 sm:leading-[3rem] lg:leading-[4rem] xl:leading-[4.5rem] font-bold tracking-wide`}
           >
             I&apos;m Carlos Garcia, Project Manager and Full-Stack Developer.
           </h1>
           <div className="relative flex justify-center md:hidden">
-            <div className="absolute z-10 right-0 top-6 gap-2 lg:hidden">
+            <div className="absolute z-10 text-blue-900 dark:text-blue-500 dark:brightness-110 right-0 top-6 gap-2 lg:hidden">
               <Link
                 href="https://www.linkedin.com/in/carlossgarcia95/"
                 target="_blank"
@@ -41,10 +41,19 @@ const Hero = () => {
             </div>
           </div>
           <p className="text-center text-lg md:text-xl lg:text-2xl font-medium md:text-left">
-            I can <span className="font-bold text-sky-700">manage</span> your
-            project, <span className="font-bold text-sky-700">code</span> your
-            solution and{" "}
-            <span className="font-bold text-sky-700">implement</span> your idea.
+            I can{" "}
+            <span className="font-extrabold text-blue-900 dark:text-blue-500 dark:brightness-110">
+              manage
+            </span>{" "}
+            your project,{" "}
+            <span className="font-extrabold text-blue-900  dark:text-blue-500 dark:brightness-110">
+              code
+            </span>{" "}
+            your solution and{" "}
+            <span className="font-extrabold text-blue-900  dark:text-blue-500 dark:brightness-110">
+              implement
+            </span>{" "}
+            your idea.
           </p>
           <div className="flex flex-wrap gap-2 justify-center items-center md:justify-start">
             <Link
@@ -64,7 +73,7 @@ const Hero = () => {
               Download CV
               <AiOutlineDownload className="h-5 w-5 ml-1" />
             </a>
-            <div className="hidden gap-2 lg:flex">
+            <div className="hidden gap-2 text-blue-900 dark:text-blue-500 dark:brightness-110 lg:flex">
               <Link
                 href="https://www.linkedin.com/in/carlossgarcia95/"
                 target="_blank"
@@ -78,8 +87,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden relative aspect-square flex-1 max-w-[725px] md:block mt-4">
-          <div className="absolute top-12 right-0 gap-2 lg:hidden">
+        <div className="hidden relative aspect-square flex-1 max-w-[700px] md:block mt-4">
+          <div className="absolute text-blue-900  top-12 right-0 gap-2 lg:hidden">
             <Link
               href="https://www.linkedin.com/in/carlossgarcia95/"
               target="_blank"

@@ -110,13 +110,13 @@ const ProjectsCarousel = () => {
             <Link
               href={project.projectUrl}
               className={buttonVariants({
-                variant: "default",
+                variant: "secondary",
                 className: "gap-1",
               })}
               target="_blank"
             >
               Visit Site
-              <BiLinkExternal size={16} />
+              <BiLinkExternal size={16}/>
             </Link>
           </DialogContent>
         </Dialog>

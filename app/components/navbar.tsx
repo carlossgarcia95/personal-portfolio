@@ -9,14 +9,13 @@ export type Navlink = {
 
 const navbar = () => {
   const navlinks: Navlink[] = [
-    { text: "Home", href: "/#home" },
     { text: "About", href: "/#about" },
     { text: "Skills", href: "/#skills" },
     { text: "Experience", href: "/#experience" },
     { text: "Portfolio", href: "/#portfolio" },
   ];
   return (
-    <nav id="home" className="px-5 py-3">
+    <nav id="home" className="px-5 pt-5">
       <div className="flex max-w-7xl mx-auto justify-between items-center">
         <Link href="/" className="text-3xl font-normal">
           CG
