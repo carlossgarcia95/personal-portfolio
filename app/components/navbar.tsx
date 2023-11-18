@@ -1,6 +1,9 @@
+'use client'
+
 import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import { buttonVariants } from "./ui/button";
+import { useTheme } from "../context/theme-context";
 
 export type Navlink = {
   text: string;
@@ -14,8 +17,18 @@ const navbar = () => {
     { text: "Experience", href: "/#experience" },
     { text: "Portfolio", href: "/#portfolio" },
   ];
+
+  const { theme } = useTheme();
+
   return (
-    <nav id="home" className="px-5 pt-5 dark:bg-slate-950">
+    <nav
+      id="home"
+      className={`px-5 pt-5 ${
+        theme === "light"
+          ? "bg-slate-50 md:bg-gradient-to-r from-slate-50 via-teal-400/20 to-blue-400/20"
+          : "bg-slate-950"
+      }`}
+    >
       <div className="flex max-w-7xl mx-auto justify-between items-center">
         <Link href="/" className="text-3xl font-normal">
           CG

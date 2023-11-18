@@ -110,7 +110,7 @@ const ProjectsCarousel = () => {
             <Link
               href={project.projectUrl}
               className={buttonVariants({
-                variant: "destructive",
+                variant: "secondary",
                 className: "",
               })}
               target="_blank"

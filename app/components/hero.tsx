@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -8,10 +10,19 @@ import {
 } from "react-icons/ai";
 import { buttonVariants } from "./ui/button";
 import { titillium_web } from "./ui/fonts";
+import { useTheme } from "../context/theme-context";
 
 const Hero = () => {
+  const { theme } = useTheme();
+
   return (
-    <section className="relative light:bg-gradient-to-b from-slate-50 via-teal-100/50 to-teal-200/50 dark:bg-slate-950">
+    <section
+      className={`relative background dark:bg-slate-950 ${
+        theme === "light"
+          ? "bg-gradient-to-b md:bg-gradient-to-r from-slate-50 via-teal-400/20 to-blue-400/20"
+          : "bg-slate-950"
+      }`}
+    >
       <div className="absolute bg-slate-50 dark:bg-slate-800 text-blue-900 dark:text-white top-1/3 right-0">
         <Link
           href="https://www.linkedin.com/in/carlossgarcia95/"
@@ -19,11 +30,11 @@ const Hero = () => {
         >
           <AiFillLinkedin
             size={50}
-            className="mb-3 h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] lg:h-[50px] lg:w-[50px]"
+            className="mb-3 h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] lg:h-[50px] lg:w-[50px] hover:opacity-90"
           />
         </Link>
         <Link href="https://github.com/carlossgarcia95" target="_blank">
-          <AiFillGithub className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] lg:h-[50px] lg:w-[50px]" />
+          <AiFillGithub className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] lg:h-[50px] lg:w-[50px] hover:opacity-90" />
         </Link>
       </div>
       <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-0">
