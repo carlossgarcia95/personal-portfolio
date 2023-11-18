@@ -1,16 +1,16 @@
-'use client'
+"use client";
 
 import Link from "next/link";
+import { useTheme } from "../context/theme-context";
 import MobileMenu from "./mobile-menu";
 import { buttonVariants } from "./ui/button";
-import { useTheme } from "../context/theme-context";
 
 export type Navlink = {
   text: string;
   href: string;
 };
 
-const navbar = () => {
+const Navbar = () => {
   const navlinks: Navlink[] = [
     { text: "About", href: "/#about" },
     { text: "Skills", href: "/#skills" },
@@ -57,4 +57,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
