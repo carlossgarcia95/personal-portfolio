@@ -27,7 +27,7 @@ const Experience = () => {
       company: "FICO",
       location: "San Diego, CA",
       description:
-        "Manage the entire lifecycle for projects ranging from internal efforts to full client implementations. Demand, resource and backlog management for two product verticals. Over 20+ project delievered successfully.",
+        "Manage the entire lifecycle for projects ranging from internal efforts to full client implementations. Demand, resource and backlog management for two product verticals. Over 20+ projects delievered successfully.",
       icon: React.createElement(CgWorkAlt),
       date: "Feb 2020 - Present",
     },
@@ -61,7 +61,7 @@ const Experience = () => {
         <p>Working with technology teams to deliver value.</p>
         <hr className="self-center mt-4" />
 
-        <VerticalTimeline lineColor="">
+        <VerticalTimeline lineColor="#9ca3af">
           {experiencesData.map((item, index) => (
             <React.Fragment key={index}>
               <VerticalTimelineElement
@@ -82,9 +82,9 @@ const Experience = () => {
                 date={item.date}
                 icon={item.icon}
                 iconStyle={{
-                  background:
-                    theme === "light" ? "white" : "rgba(255, 255, 255, 0",
+                  background: "#ffffff",
                   fontSize: "1.5rem",
+                  color: "black"
                 }}
               >
                 <h3 className="font-semibold capitalize">{item.title}</h3>

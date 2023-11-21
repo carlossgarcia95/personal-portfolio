@@ -116,7 +116,7 @@ const ProjectsCarousel = () => {
               target="_blank"
             >
               Visit Site
-              <BiLinkExternal size={16}/>
+              <BiLinkExternal size={16} className="ml-1" />
             </Link>
           </DialogContent>
         </Dialog>
