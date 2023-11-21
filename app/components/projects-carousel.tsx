@@ -29,6 +29,7 @@ const ProjectsCarousel = () => {
       ],
       imageUrl: "/red-taco-shop.jpg",
       projectUrl: "https://red-taco-shop.vercel.app/",
+      githubUrl: "https://github.com/carlossgarcia95/red-taco-shop",
     },
     {
       title: "iStore",
@@ -47,6 +48,7 @@ const ProjectsCarousel = () => {
       ],
       imageUrl: "/iStore.jpg",
       projectUrl: "https://istore-shopping.vercel.app/",
+      githubUrl: "https://github.com/carlossgarcia95/iStore",
     },
     {
       title: "Issue Tracker",
@@ -65,6 +67,7 @@ const ProjectsCarousel = () => {
       ],
       imageUrl: "/issue-tracker.jpg",
       projectUrl: "https://issue-tracker-two-sigma.vercel.app/",
+      githubUrl: "https://github.com/carlossgarcia95/issue-tracker",
     },
   ];
 
@@ -107,17 +110,30 @@ const ProjectsCarousel = () => {
                 <Badge key={index}>{tag}</Badge>
               ))}
             </ul>
-            <Link
-              href={project.projectUrl}
-              className={buttonVariants({
-                variant: "secondary",
-                className: "",
-              })}
-              target="_blank"
-            >
-              Visit Site
-              <BiLinkExternal size={16} className="ml-1" />
-            </Link>
+            <div className="flex gap-2">
+              <Link
+                href={project.githubUrl}
+                className={buttonVariants({
+                  variant: "outline",
+                  className: "flex-1",
+                })}
+                target="_blank"
+              >
+                Source Code
+                <BiLinkExternal size={16} className="ml-1" />
+              </Link>
+              <Link
+                href={project.projectUrl}
+                className={buttonVariants({
+                  variant: "secondary",
+                  className: "flex-1",
+                })}
+                target="_blank"
+              >
+                Visit Site
+                <BiLinkExternal size={16} className="ml-1" />
+              </Link>
+            </div>
           </DialogContent>
         </Dialog>
       ))}
