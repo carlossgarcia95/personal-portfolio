@@ -11,6 +11,7 @@ import {
 import { useTheme } from "../context/theme-context";
 import { buttonVariants } from "./ui/button";
 import { titillium_web } from "./ui/fonts";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -45,11 +46,13 @@ const Hero = () => {
       </div>
       <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-0">
         <div className="flex-1 max-w-2xl xl:ml-4 space-y-5 lg:space-y-8">
-          <h1
+          <motion.h1
             className={`${titillium_web.className} text-blue-900 dark:text-slate-50 text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-10 sm:leading-[3rem] lg:leading-[4rem] xl:leading-[4.5rem] font-bold tracking-wide`}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
           >
             I&apos;m Carlos Garcia, Project Manager and Full-Stack Developer.
-          </h1>
+          </motion.h1>
           <div className="relative flex justify-center md:hidden">
             <div className="relative h-[300px] sm:h-[450px] aspect-square">
               <Image
@@ -62,7 +65,14 @@ const Hero = () => {
               />
             </div>
           </div>
-          <p className="text-center text-lg md:text-xl lg:text-2xl font-medium md:text-left">
+          <motion.p
+            className="text-center text-lg md:text-xl lg:text-2xl font-medium md:text-left"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.1,
+            }}
+          >
             I can{" "}
             <span className="font-extrabold text-blue-900 dark:text-slate-50 dark:brightness-110">
               manage
@@ -76,8 +86,15 @@ const Hero = () => {
               implement
             </span>{" "}
             your idea.
-          </p>
-          <div className="flex flex-wrap gap-2 justify-center items-center md:justify-start">
+          </motion.p>
+          <motion.div
+            className="flex flex-wrap gap-2 justify-center items-center md:justify-start"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: .2,
+            }}
+          >
             <Link
               href="/#portfolio"
               className={buttonVariants({
@@ -95,7 +112,7 @@ const Hero = () => {
               Download CV
               <AiOutlineDownload className="h-5 w-5 ml-1" />
             </a>
-          </div>
+          </motion.div>
         </div>
 
         <div className="hidden relative aspect-square flex-1 max-w-[700px] md:block mt-4">

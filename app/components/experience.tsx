@@ -1,8 +1,7 @@
 "use client";
 
+import { experiencesData } from "@/lib/data";
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,45 +11,6 @@ import { useTheme } from "../context/theme-context";
 import { titillium_web } from "./ui/fonts";
 
 const Experience = () => {
-  const experiencesData = [
-    {
-      title: "Full-Stack Developer",
-      company: "Freelance",
-      location: "San Diego, CA",
-      description:
-        "Designed and developed Red Taco Shop website. Offer web development services to small and medium size businesses.",
-      icon: React.createElement(FaReact),
-      date: "Apr 2023 - Present",
-    },
-    {
-      title: "Project Manager II",
-      company: "FICO",
-      location: "San Diego, CA",
-      description:
-        "Manage the entire lifecycle for projects ranging from internal efforts to full client implementations. Demand, resource and backlog management for two product verticals. Over 20+ projects delievered successfully.",
-      icon: React.createElement(CgWorkAlt),
-      date: "Feb 2020 - Present",
-    },
-    {
-      title: "Project Manager",
-      company: "Salud Digna",
-      location: "Culiacan, Mexico",
-      description:
-        "Led and coordinated team in obtaining the coveted, world-renowned CAP Accreditation, acting as a liaison between stakeholders and project team members. Implemented PMBOK standards.",
-      icon: React.createElement(CgWorkAlt),
-      date: "Jan 2019 - Jan 2020",
-    },
-    {
-      title: "Quality Engineer",
-      company: "Insertech",
-      location: "Culiacan, Mexico",
-      description:
-        "Provided support and solutions to quality related problems within the organization. Reduced quality alert incidents by 21%.",
-      icon: React.createElement(CgWorkAlt),
-      date: "Aug 2018 - Dic 2018",
-    },
-  ];
-
   const { theme } = useTheme();
   return (
     <section id="experience">
@@ -84,7 +44,7 @@ const Experience = () => {
                 iconStyle={{
                   background: "#ffffff",
                   fontSize: "1.5rem",
-                  color: "black"
+                  color: "black",
                 }}
               >
                 <h3 className="font-semibold capitalize">{item.title}</h3>
