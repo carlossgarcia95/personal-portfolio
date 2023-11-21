@@ -23,14 +23,14 @@ const Hero = () => {
           : "bg-slate-950"
       }`}
     >
-      <div className="absolute z-10 dark:text-white top-1/3 right-0">
+      <div className="absolute z-10 dark:text-white top-[250px] md:top-1/3 right-0">
         <div className="bg-slate-50 mb-2 px-2 flex justify-center items-center dark:bg-slate-800">
           <Link
             href="https://linkedin.com/in/carlossgarcia95"
             target="_blank"
-            className="justify-center items-center text-blue-600 brightness-90"
+            className="justify-center items-center text-blue-600 dark:text-white brightness-90"
           >
-            <AiFillLinkedin className="h-[45px] w-[45px] lg:h-[50px] lg:w-[50px]" />
+            <AiFillLinkedin className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] lg:h-[50px] lg:w-[50px]" />
           </Link>
         </div>
         <div className="bg-slate-50 flex justify-center items-center dark:bg-slate-800">
@@ -39,7 +39,7 @@ const Hero = () => {
             target="_blank"
             className="justify-center items-center"
           >
-            <AiFillGithub className="h-[45px] w-[45px] lg:h-[50px] lg:w-[50px]" />
+            <AiFillGithub className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] lg:h-[50px] lg:w-[50px]" />
           </Link>
         </div>
       </div>
@@ -57,6 +57,8 @@ const Hero = () => {
                 alt="Carlos Garcia image"
                 fill
                 className="self-center relative object-contain rounded-full"
+                sizes="(max-width: 768px) 100vw"
+                priority
               />
             </div>
           </div>
@@ -102,6 +104,8 @@ const Hero = () => {
             alt="Carlos Garcia image"
             fill
             className="object-contain"
+            sizes="(min-width: 769px) 50vw"
+            priority
           />
         </div>
       </div>
