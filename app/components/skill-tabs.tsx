@@ -6,6 +6,7 @@ import {
 } from "@/app/components/ui/card";
 import { Badge } from "./ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { motion } from "framer-motion";
 
 const SkillTabs = () => {
   const pmFrameworks = ["Waterfall", "Agile", "Scrum", "Kanban", "SAFe"];
@@ -40,6 +41,20 @@ const SkillTabs = () => {
     "Google Analytics",
   ];
 
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05 * index,
+      },
+    }),
+  };
+
   return (
     <Tabs
       defaultValue="projectManagement"
@@ -61,7 +76,18 @@ const SkillTabs = () => {
               </h3>
               <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800 mb-6">
                 {pmFrameworks.map((skill, index) => (
-                  <Badge key={index}>{skill}</Badge>
+                  <motion.div
+                    key={index}
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{
+                      once: true,
+                    }}
+                    custom={index}
+                  >
+                    <Badge key={index}>{skill}</Badge>
+                  </motion.div>
                 ))}
               </ul>
               <h3 className="text-xl text-left text-blue-900 dark:text-slate-50 font-medium mb-2">
@@ -69,7 +95,18 @@ const SkillTabs = () => {
               </h3>
               <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800">
                 {pmTechnologies.map((skill, index) => (
-                  <Badge key={index}>{skill}</Badge>
+                  <motion.div
+                    key={index}
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{
+                      once: true,
+                    }}
+                    custom={index}
+                  >
+                    <Badge key={index}>{skill}</Badge>
+                  </motion.div>
                 ))}
               </ul>
             </div>
@@ -89,7 +126,18 @@ const SkillTabs = () => {
             <div className="space-y-1">
               <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800">
                 {devSkills.map((skill, index) => (
-                  <Badge key={index}>{skill}</Badge>
+                  <motion.div
+                    key={index}
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{
+                      once: true,
+                    }}
+                    custom={index}
+                  >
+                    <Badge key={index}>{skill}</Badge>
+                  </motion.div>
                 ))}
               </ul>
             </div>
