@@ -16,7 +16,6 @@ const Certification = ({ item }: { item: any }) => {
 
   return (
     <motion.div
-      key={item.title}
       ref={ref}
       style={{
         scale: scaleProgess,
