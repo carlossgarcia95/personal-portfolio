@@ -13,9 +13,10 @@ const Certification = ({ item }: { item: any }) => {
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-  
+
   return (
     <motion.div
+      key={item.title}
       ref={ref}
       style={{
         scale: scaleProgess,
