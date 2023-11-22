@@ -24,10 +24,10 @@
   }
 
   .badge {
-    @apply bg-white border border-black rounded-xl px-5 py-1 dark:bg-white/10 dark:text-white/80
+    @apply bg-white border border-black rounded-xl px-5 py-1 dark:bg-white/10 dark:text-white/80;
   }
 
   .navlink {
-    @apply transition text-slate-600 dark:text-slate-200 dark:hover:text-slate-50 hover:text-slate-900 
+    @apply transition border-b-2 border-transparent hover:border-teal-600 duration-300 ease-in-out;
   }
 }

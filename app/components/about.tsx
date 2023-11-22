@@ -15,9 +15,8 @@ const About = () => {
         <p>Life-long learner and technology enthusiast.</p>
         <motion.hr
           className="self-center my-4"
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         />
         <div className="flex flex-col space-between md:flex-row gap-10">
@@ -25,10 +24,9 @@ const About = () => {
           <div className="flex-1 flex-col max-w-xl mx-auto items-center space-y-6 md:space-y-10">
             <motion.div
               className="flex-col space-y-1"
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5, duration: 0.5 }}
+              transition={{ duration: 0.5 }}
             >
               <h3 className="text-xl text-left text-blue-900 font-medium dark:text-slate-50">
                 Project Management
@@ -44,10 +42,9 @@ const About = () => {
             </motion.div>
             <motion.div
               className="flex-col space-y-1"
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 1, duration: 0.5 }}
+              transition={{ duration: 0.5 }}
             >
               <h3 className="text-xl text-left text-blue-900 font-medium dark:text-slate-50">
                 Web Development
@@ -72,17 +69,15 @@ const About = () => {
 
           <motion.div
             className="hidden md:block relative h-96 w-5/12 self-center"
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: .1 }}
           >
             <motion.div
               className="absolute left-3 bottom-3 h-96 w-full bg-teal-600 rounded-lg shadow-xl"
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.7 }}
+              transition={{ delay: 1 }}
             />
             <Image
               src="/about-img.jpg"

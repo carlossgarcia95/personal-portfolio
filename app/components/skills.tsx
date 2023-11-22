@@ -15,7 +15,6 @@ const Skills = () => {
           className="self-center mt-4 mb-5"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         />
         <SkillTabs />
