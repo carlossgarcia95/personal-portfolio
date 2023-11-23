@@ -24,7 +24,7 @@ export const experiencesData = [
   {
     title: "Project Manager",
     company: "Salud Digna",
-    location: "Culiacan, Mexico",
+    location: "Mexico",
     description:
       "Led and coordinated team in obtaining the coveted, world-renowned CAP Accreditation, acting as a liaison between stakeholders and project team members. Implemented PMBOK standards.",
     icon: React.createElement(CgWorkAlt),
@@ -33,7 +33,7 @@ export const experiencesData = [
   {
     title: "Quality Engineer",
     company: "Insertech",
-    location: "Culiacan, Mexico",
+    location: "Mexico",
     description:
       "Provided support and solutions to quality related problems within the organization. Reduced quality alert incidents by 21%.",
     icon: React.createElement(CgWorkAlt),

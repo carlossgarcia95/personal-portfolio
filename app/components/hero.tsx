@@ -24,26 +24,6 @@ const Hero = () => {
           : "bg-slate-950"
       }`}
     >
-      <div className="absolute z-10 dark:text-white top-[250px] md:top-1/3 right-0">
-        <div className="bg-slate-50 mb-2 px-2 flex justify-center items-center dark:bg-slate-800">
-          <Link
-            href="https://linkedin.com/in/carlossgarcia95"
-            target="_blank"
-            className="justify-center items-center text-blue-600 dark:text-white brightness-90"
-          >
-            <AiFillLinkedin className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] lg:h-[50px] lg:w-[50px]" />
-          </Link>
-        </div>
-        <div className="bg-slate-50 flex justify-center items-center dark:bg-slate-800">
-          <Link
-            href="https://github.com/carlossgarcia95"
-            target="_blank"
-            className="justify-center items-center"
-          >
-            <AiFillGithub className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] lg:h-[50px] lg:w-[50px]" />
-          </Link>
-        </div>
-      </div>
       <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-0">
         <div className="flex-1 max-w-2xl xl:ml-4 space-y-5 lg:space-y-8">
           <motion.h1

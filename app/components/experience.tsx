@@ -1,12 +1,11 @@
 "use client";
 
 import { experiencesData } from "@/lib/data";
-import React from "react";
+import { motion } from "framer-motion";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { titillium_web } from "./ui/fonts";
 import TimelineElement from "./timeline-element";
-import { motion } from "framer-motion";
+import { titillium_web } from "./ui/fonts";
 
 const Experience = () => {
   return (

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { motion } from "framer-motion";
 import ContactForm from "./contact-form";
@@ -11,13 +11,17 @@ const Contact = () => {
         <h2 className={`${titillium_web.className} section-heading`}>
           Contact
         </h2>
-        <p>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           Send email to{" "}
           <a href="mailto:" className="text-blue-500 font-bold hover:underline">
             carlosgarcia3995@gmail.com
           </a>{" "}
           or fill out the form below.
-        </p>
+        </motion.p>
         <motion.hr
           className="self-center my-4"
           initial={{ opacity: 0, y: 50 }}

@@ -22,7 +22,7 @@ const ProjectsCarousel = () => {
           <DialogTrigger asChild>
             <div
               key={project.title}
-              className="carousel-item relative aspect-video w-5/6 lg:w-2/3 max-w-5xl hover:cursor-pointer"
+              className="carousel-item relative aspect-video w-5/6 lg:w-2/3 max-w-5xl hover:cursor-pointer hover:brightness-95"
             >
               <Image
                 src={project.imageUrl}

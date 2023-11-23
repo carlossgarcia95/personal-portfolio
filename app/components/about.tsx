@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { BarChartHorizontalBig, Code } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { buttonVariants } from "./ui/button";
 import { titillium_web } from "./ui/fonts";
-import { IoBarChartSharp } from "react-icons/io5";
-import { BarChartHorizontalBig, Code } from "lucide-react";
 
 const About = () => {
   return (
@@ -21,14 +22,37 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         />
-        <div className="flex flex-col space-between md:flex-row gap-10">
-          {/* Left Container */}
-          <div className="flex-1 flex-col max-w-xl mx-auto items-center space-y-6 md:space-y-10">
+        <div className="flex flex-col space-between md:flex-row gap-12">
+          <motion.div
+            className="hidden md:block relative h-[30rem] w-5/12 self-center"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true}}
+          >
+            <motion.div
+              className="absolute left-4 bottom-4 h-[30rem] w-full bg-teal-600 rounded-lg shadow-xl"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1.5 }}
+            />
+            <Image
+              src="/about-img.jpg"
+              alt="laptop"
+              fill
+              className="object-cover rounded-lg"
+            />
+          </motion.div>
+
+          {/* Right Container */}
+          <div className="flex-1 flex-col max-w-xl mx-auto md:mx-0 md:ml-auto items-center space-y-6">
             <motion.div
               className="flex-col space-y-1 border p-4 rounded-lg bg-white dark:bg-slate-800 md:dark:bg-slate-900 dark:border-transparent  md:bg-slate-50 md:border-transparent md:p-0 "
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ amount: 0.5 }}
             >
               <div className="flex justify-center md:hidden mb-4">
                 <BarChartHorizontalBig
@@ -57,7 +81,8 @@ const About = () => {
               className="flex-col space-y-1 border p-4 rounded-lg bg-white dark:bg-slate-800 md:dark:bg-slate-900 dark:border-transparent md:bg-slate-50 md:border-transparent md:p-0"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ amount: 0.5 }}
             >
               <div className="flex justify-center md:hidden">
                 <Code size={80} className="text-blue-900 dark:text-blue-600" />
@@ -91,28 +116,34 @@ const About = () => {
                 forefront of technology.
               </p>
             </motion.div>
-          </div>
-
-          <motion.div
-            className="hidden md:block relative h-96 w-5/12 self-center"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-          >
             <motion.div
-              className="absolute left-3 bottom-3 h-96 w-full bg-teal-600 rounded-lg shadow-xl"
+              className="flex dark:text-white justify-center md:justify-start gap-2"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 1.5 }}
-            />
-            <Image
-              src="/about-img.jpg"
-              alt="laptop"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </motion.div>
+              transition={{ duration: 0.5 }}
+            >
+              <div className={buttonVariants({ variant: "secondary" })}>
+                <Link
+                  href="https://linkedin.com/in/carlossgarcia95"
+                  target="_blank"
+                  className="flex items-center gap-1"
+                >
+                  <AiFillLinkedin size={25} />
+                  LinkedIn
+                </Link>
+              </div>
+              <div className={buttonVariants({ variant: "secondary" })}>
+                <Link
+                  href="https://github.com/carlossgarcia95"
+                  target="_blank"
+                  className="flex items-center gap-1"
+                >
+                  <AiFillGithub size={25} />
+                  Github
+                </Link>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

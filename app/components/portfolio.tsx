@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import ProjectsCarousel from "./projects-carousel";
 import { titillium_web } from "./ui/fonts";
@@ -13,9 +13,14 @@ const Portfolio = () => {
         >
           Portfolio
         </h2>
-        <p className="text-slate-50">
+        <motion.p
+          className="text-slate-50"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           Take a peak at some of my previous work.
-        </p>
+        </motion.p>
         <motion.hr
           className="self-center mt-4 mb-5"
           initial={{ opacity: 0, y: 50 }}

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Certifications from "./certifications";
 import SkillTabs from "./skill-tabs";
