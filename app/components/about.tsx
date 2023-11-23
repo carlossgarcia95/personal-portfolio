@@ -28,7 +28,7 @@ const About = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: true}}
+            viewport={{ once: true }}
           >
             <motion.div
               className="absolute left-4 bottom-4 h-[30rem] w-full bg-teal-600 rounded-lg shadow-xl"
@@ -52,7 +52,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              viewport={{ amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <div className="flex justify-center md:hidden mb-4">
                 <BarChartHorizontalBig
@@ -82,7 +82,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              viewport={{ amount: 0.5 }}
+              viewport={{once: true, amount: 0.5 }}
             >
               <div className="flex justify-center md:hidden">
                 <Code size={80} className="text-blue-900 dark:text-blue-600" />
