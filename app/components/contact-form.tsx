@@ -19,6 +19,7 @@ import { ContactFormSchema } from "../../lib/validationSchemas";
 import Spinner from "./spinner";
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
+import { motion } from "framer-motion";
 
 export function ContactForm() {
   const form = useForm<z.infer<typeof ContactFormSchema>>({
@@ -45,7 +46,12 @@ export function ContactForm() {
   };
 
   return (
-    <div className="w-full max-w-lg text-left rounded-lg self-center my-2">
+    <motion.div
+      className="w-full max-w-lg text-left rounded-lg self-center my-2"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.75, delay: .2 }}
+    >
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <FormField
@@ -84,7 +90,7 @@ export function ContactForm() {
           </Button>
         </form>
       </Form>
-    </div>
+    </motion.div>
   );
 }
 
