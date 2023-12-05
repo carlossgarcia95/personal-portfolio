@@ -20,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+      <link rel="icon" href="/logo.png" sizes="any" />
+      </head>
       <body
         className={`${inter.className} antialiased bg-slate-50 text-slate-900 font-medium dark:bg-slate-900 dark:text-slate-50 dark:text-opacity-90`}
       >
