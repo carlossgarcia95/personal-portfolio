@@ -1,17 +1,12 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiOutlineArrowRight,
-  AiOutlineDownload,
-} from "react-icons/ai";
+import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai";
 import { useTheme } from "../context/theme-context";
 import { buttonVariants } from "./ui/button";
 import { titillium_web } from "./ui/fonts";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -72,7 +67,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: .2,
+              delay: 0.2,
             }}
           >
             <Link

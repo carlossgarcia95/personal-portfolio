@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "../context/theme-context";
 import MobileMenu from "./mobile-menu";
 import { buttonVariants } from "./ui/button";
+import { titillium_web } from "./ui/fonts";
 
 export type Navlink = {
   text: string;
@@ -31,17 +33,28 @@ const Navbar = () => {
       }`}
     >
       <div className="flex max-w-7xl mx-auto justify-between items-center">
-        <Link href="/" className="text-3xl font-normal">
-          CG
+        <Link href="/" className="flex items-center gap-2 ">
+          <Image
+            quality={100}
+            src="/logo.png"
+            alt="Carlos Garcia logo"
+            width={35}
+            height={35}
+          />
+          <span className={`${titillium_web.className} hidden md:block text-xl font-semibold`}>
+            Carlos Garcia
+          </span>
         </Link>
+
         <div className="hidden md:flex justify-end gap-8 text-xz">
-          {navlinks.map((link) => (
-            link.text !== "Contact" && (
-              <Link key={link.text} className="navlink" href={link.href}>
-                {link.text}
-              </Link>
-            )
-          ))}
+          {navlinks.map(
+            (link) =>
+              link.text !== "Contact" && (
+                <Link key={link.text} className="navlink" href={link.href}>
+                  {link.text}
+                </Link>
+              )
+          )}
         </div>
         <div className="flex items-center">
           <Link
