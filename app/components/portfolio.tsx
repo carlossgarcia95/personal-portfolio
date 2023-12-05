@@ -1,8 +1,8 @@
 "use client";
 
+import { motion } from "framer-motion";
 import ProjectsCarousel from "./projects-carousel";
 import { titillium_web } from "./ui/fonts";
-import { motion } from "framer-motion";
 
 const Portfolio = () => {
   return (

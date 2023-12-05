@@ -41,7 +41,9 @@ const Navbar = () => {
             width={35}
             height={35}
           />
-          <span className={`${titillium_web.className} hidden md:block text-xl font-semibold`}>
+          <span
+            className={`${titillium_web.className} hidden md:block text-xl font-semibold`}
+          >
             Carlos Garcia
           </span>
         </Link>

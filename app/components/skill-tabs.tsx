@@ -4,9 +4,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/app/components/ui/card";
+import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import { motion } from "framer-motion";
 
 const SkillTabs = () => {
   const pmFrameworks = ["Waterfall", "Agile", "Scrum", "Kanban", "SAFe"];

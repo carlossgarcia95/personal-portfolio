@@ -29,7 +29,7 @@ const Certifications = () => {
       </h3>
       <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
         {certifications.map((item) => (
-          <Certification key={item.title} item={item}/>
+          <Certification key={item.title} item={item} />
         ))}
       </div>
     </>

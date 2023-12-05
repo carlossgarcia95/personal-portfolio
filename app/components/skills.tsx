@@ -1,9 +1,9 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Certifications from "./certifications";
 import SkillTabs from "./skill-tabs";
 import { titillium_web } from "./ui/fonts";
-import { motion } from "framer-motion";
 
 const Skills = () => {
   return (

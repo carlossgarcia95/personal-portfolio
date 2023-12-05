@@ -6,9 +6,9 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/app/components/ui/dialog";
+import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
-import { projectsData } from "@/lib/data";
 import { BiLinkExternal } from "react-icons/bi";
 import { Badge } from "./ui/badge";
 import { buttonVariants } from "./ui/button";

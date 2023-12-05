@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 // components/ScrollToTopButton.js
 import { useEffect, useState } from "react";
@@ -44,5 +44,3 @@ const ScrollToTopButton = () => {
 };
 
 export default ScrollToTopButton;
-
-
