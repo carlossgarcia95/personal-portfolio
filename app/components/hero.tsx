@@ -102,6 +102,7 @@ const Hero = () => {
             fill
             className="object-contain"
             sizes="(min-width: 769px) 50vw"
+            quality={100}
             priority
           />
         </div>
