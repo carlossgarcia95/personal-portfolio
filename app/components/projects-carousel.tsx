@@ -20,14 +20,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiLinkExternal } from "react-icons/bi";
 import { Badge } from "./ui/badge";
-import { Button, buttonVariants } from "./ui/button";
+import { buttonVariants } from "./ui/button";
 import { Card } from "./ui/card";
 
 export default function App() {
   return (
     <>
       <Swiper
-        speed={1000}
+        speed={500}
         slidesPerView={"auto"}
         centeredSlides={true}
         spaceBetween={10}
@@ -42,13 +42,17 @@ export default function App() {
         className="mySwiper w-full z-0"
       >
         {projectsData.map((project) => (
-          <SwiperSlide key={project.title} className="relative aspect-video lg:w-2/3 max-w-6xl hover:cursor-pointer hover:opacity-95">
+          <SwiperSlide
+            key={project.title}
+            className="relative aspect-video max-w-6xl hover:cursor-pointer hover:opacity-95"
+          >
             <Dialog key={project.title}>
               <DialogTrigger asChild>
                 <Image
                   src={project.imageUrl}
                   alt={project.title}
                   fill
+                  sizes="(max-width: 1152px) 100vw 1152px"
                   className="object-fit rounded-lg"
                 />
               </DialogTrigger>
@@ -62,6 +66,7 @@ export default function App() {
                       src={project.imageUrl}
                       alt={project.title}
                       fill
+                      sizes="(max-width: 672px) 100vw 672px"
                       className="object-fit rounded-md"
                     />
                   </Card>
