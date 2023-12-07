@@ -10,7 +10,7 @@ export default function ThemeSwitch({ className }: any) {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <button className={`flex items-center justify-center ${className}`} onClick={toggleTheme}>
+    <button className={`flex items-center justify-center z-50 ${className}`} onClick={toggleTheme}>
       {theme === "light" ? (
         <IoSunnyOutline size={28} />
       ) : (
