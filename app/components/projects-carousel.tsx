@@ -39,12 +39,12 @@ export default function App() {
           disableOnInteraction: false,
         }}
         modules={[Pagination, Autoplay]}
-        className="mySwiper w-full z-0"
+        className="mySwiper w-full"
       >
         {projectsData.map((project) => (
           <SwiperSlide
             key={project.title}
-            className="relative aspect-video max-w-6xl hover:cursor-pointer hover:opacity-95"
+            className="relative aspect-video max-w-[340px] sm:max-w-[500px] md:max-w-2xl lg:max-w-4xl xl:max-w-6xl hover:cursor-pointer hover:opacity-95"
           >
             <Dialog key={project.title}>
               <DialogTrigger asChild>
