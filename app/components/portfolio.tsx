@@ -19,7 +19,7 @@ const Portfolio = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Take a peak at some of my previous work.
+          Have a peak at my work, coded from scratch.
         </motion.p>
         <motion.hr
           className="self-center mt-4 mb-5"

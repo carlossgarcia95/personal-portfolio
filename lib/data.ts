@@ -61,7 +61,7 @@ export const projectsData = [
     {
       title: "iStore",
       description:
-        "An ecommerce website that sells apple products, has it's own cart system, user authentication and is integrated with Stripe checkout.",
+        "An e-commerce website that sells apple products, has its own cart system, user authentication, and is integrated with Stripe checkout.",
       tags: [
         "React",
         "Next.js",
@@ -80,7 +80,7 @@ export const projectsData = [
     {
       title: "Issue Tracker",
       description:
-        "An application for creating, tracking and assigning issues. Includes visualization dashboard to help manage issues.",
+        "An application for creating, tracking, and assigning issues. Includes visualization dashboard to help manage issues.",
       tags: [
         "React",
         "Next.js",
