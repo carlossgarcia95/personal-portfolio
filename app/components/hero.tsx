@@ -15,7 +15,7 @@ const Hero = () => {
     <section
       className={`relative ${
         theme === "light"
-          ? "bg-gradient-to-b md:bg-gradient-to-r from-slate-50 via-teal-400/20 to-blue-400/20"
+          ? "bg-gradient-to-b md:bg-gradient-to-r from-slate-50 via-teal-400/30 to-cyan-400/30"
           : "bg-gradient-to-b md:bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-950"
       }`}
     >

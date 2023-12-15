@@ -9,7 +9,7 @@ import { titillium_web } from "./ui/fonts";
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-gradient-to-b from-blue-950 to-slate-950 dark:bg-slate-950">
+    <section id="experience" className="bg-blue-950 dark:bg-gradient-to-b from-blue-950 to-slate-950 dark:bg-slate-950">
       <div className="container py-8 flex flex-col justify-center text-center gap-3 md:gap-6">
         <h2 className={`${titillium_web.className} section-heading !text-slate-50`}>
           Experience
