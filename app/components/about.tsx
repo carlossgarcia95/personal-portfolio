@@ -11,7 +11,7 @@ import { titillium_web } from "./ui/fonts";
 const About = () => {
   return (
     <section id="about">
-      <div className="container py-8 flex flex-col text-center gap-3 md:gap-6 max-w-7xl">
+      <div className="container py-12 flex flex-col text-center gap-3 md:gap-6 max-w-7xl">
         <h2 className={`${titillium_web.className} section-heading`}>
           About Me
         </h2>
@@ -53,7 +53,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.35 }}
             >
               <div className="flex justify-center md:hidden mb-4">
                 <BarChartHorizontalBig
@@ -83,7 +83,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.35 }}
             >
               <div className="flex justify-center md:hidden">
                 <Code size={80} className="text-blue-900 dark:text-blue-600" />

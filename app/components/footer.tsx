@@ -4,7 +4,7 @@ import ThemeSwitch from "./theme-switch";
 
 const Footer = () => {
   return (
-    <section className="bg-slate-200 dark:bg-slate-950">
+    <section className="bg-slate-200 dark:bg-slate-900">
       <footer className="p-5 space-y-4 md:pt-0 text-center border-t border-slate-300 dark:border-slate-600 mx-auto max-w-7xl w-11/12">
         <div className="flex self-center justify-center md:hidden">
           <ThemeSwitch />

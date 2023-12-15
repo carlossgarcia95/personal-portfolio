@@ -13,10 +13,10 @@ const Hero = () => {
 
   return (
     <section
-      className={`relative background dark:bg-slate-950 ${
+      className={`relative ${
         theme === "light"
           ? "bg-gradient-to-b md:bg-gradient-to-r from-slate-50 via-teal-400/20 to-blue-400/20"
-          : "bg-slate-950"
+          : "bg-gradient-to-b md:bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-950"
       }`}
     >
       <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-0">

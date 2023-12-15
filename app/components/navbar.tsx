@@ -29,7 +29,7 @@ const Navbar = () => {
       className={`px-5 pt-5 ${
         theme === "light"
           ? "bg-slate-50 md:bg-gradient-to-r from-slate-50 via-teal-400/20 to-blue-400/20"
-          : "bg-slate-950"
+          : "bg-slate-950 md:bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-950"
       }`}
     >
       <div className="flex max-w-7xl mx-auto justify-between items-center">
