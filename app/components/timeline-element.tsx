@@ -20,7 +20,7 @@ const TimelineElement = ({ item }: any) => {
         contentArrowStyle={{
           borderRight:
             theme === "light"
-              ? "0.4rem solid #9ca3af"
+              ? "0.4rem solid #ffffff"
               : "0.4rem solid rgba(255, 255, 255, 0.5)",
         }}
         date={item.date}
@@ -31,10 +31,10 @@ const TimelineElement = ({ item }: any) => {
           color: "black",
         }}
       >
-        <h3 className="font-semibold capitalize">{item.title}</h3>
-        <p className="!font-normal !mt-0">{item.company}</p>
-        <p className="!font-normal !mt-0">{item.location}</p>
-        <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+        <h3 className="font-semibold text-slate-900 dark:text-slate-50 capitalize">{item.title}</h3>
+        <p className="!font-normal text-slate-900 dark:text-slate-50 !mt-0">{item.company}</p>
+        <p className="!font-normal text-slate-900 dark:text-slate-50 !mt-0">{item.location}</p>
+        <p className="!mt-1 !font-normal text-slate-700 dark:text-white/75">
           {item.description}
         </p>
       </VerticalTimelineElement>

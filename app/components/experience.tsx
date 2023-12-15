@@ -22,7 +22,7 @@ const Experience = () => {
           transition={{ duration: 0.5 }}
         />
 
-        <VerticalTimeline lineColor="#9ca3af" className="">
+        <VerticalTimeline lineColor="#9ca3af" className="text-slate-50">
           {experiencesData.map((item, index) => {
             return <TimelineElement key={index} item={item} />;
           })}
