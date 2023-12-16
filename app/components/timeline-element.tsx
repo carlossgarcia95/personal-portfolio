@@ -24,6 +24,11 @@ const TimelineElement = ({ item }: any) => {
               : "0.4rem solid rgba(255, 255, 255, 0.5)",
         }}
         date={item.date}
+        dateClassName={
+          theme === "light"
+            ? "text-blue-500 !opacity-100 !font-bold"
+            : "#1e293b"
+        }
         icon={item.icon}
         iconStyle={{
           background: "#ffffff",
@@ -31,12 +36,10 @@ const TimelineElement = ({ item }: any) => {
           color: "black",
         }}
       >
-        <h3 className="font-semibold text-slate-900 dark:text-slate-50 capitalize">{item.title}</h3>
-        <p className="!font-normal text-slate-900 dark:text-slate-50 !mt-0">{item.company}</p>
-        <p className="!font-normal text-slate-900 dark:text-slate-50 !mt-0">{item.location}</p>
-        <p className="!mt-1 !font-normal text-slate-700 dark:text-white/75">
-          {item.description}
-        </p>
+        <h3 className="font-extrabold  capitalize">{item.title}</h3>
+        <p className="!mt-0">{item.company}</p>
+        <p className="!mt-0">{item.location}</p>
+        <p className="!mt-1 !font-normal">{item.description}</p>
       </VerticalTimelineElement>
     </div>
   );

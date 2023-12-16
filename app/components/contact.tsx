@@ -6,7 +6,7 @@ import { titillium_web } from "./ui/fonts";
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-slate-200 dark:bg-slate-900">
+    <section id="contact" className="dark:bg-slate-900">
       <div className="container py-10 flex flex-col justify-center text-center gap-3 md:gap-6">
         <h2 className={`${titillium_web.className} section-heading`}>
           Contact
