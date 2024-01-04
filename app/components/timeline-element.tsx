@@ -26,7 +26,7 @@ const TimelineElement = ({ item }: any) => {
         date={item.date}
         dateClassName={
           theme === "light"
-            ? "text-blue-500 !opacity-100 !font-bold"
+            ? "!opacity-100"
             : "#1e293b"
         }
         icon={item.icon}
@@ -36,7 +36,7 @@ const TimelineElement = ({ item }: any) => {
           color: "black",
         }}
       >
-        <h3 className="font-extrabold  capitalize">{item.title}</h3>
+        <h3 className="font-bold capitalize">{item.title}</h3>
         <p className="!mt-0">{item.company}</p>
         <p className="!mt-0">{item.location}</p>
         <p className="!mt-1 !font-normal">{item.description}</p>

@@ -28,7 +28,7 @@ const Navbar = () => {
       id="home"
       className={`px-5 pt-5 ${
         theme === "light"
-          ? "bg-slate-50 md:bg-gradient-to-r from-slate-50 via-teal-400/10 to-teal-400/50"
+          ? "bg-slate-50 md:bg-gradient-to-r from-slate-50 via-sky-400/10 to-blue-400/50"
           : "bg-slate-950 md:bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-950"
       }`}
     >

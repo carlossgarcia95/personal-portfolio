@@ -15,14 +15,14 @@ const Hero = () => {
     <section
       className={`relative ${
         theme === "light"
-          ? "bg-gradient-to-b md:bg-gradient-to-r from-slate-50 via-teal-400/10 to-teal-400/50"
+          ? "bg-gradient-to-b md:bg-gradient-to-r from-slate-50 via-sky-400/10 to-blue-400/50"
           : "bg-gradient-to-b md:bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-950"
       }`}
     >
       <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-0">
         <div className="flex-1 max-w-2xl xl:ml-4 space-y-5 lg:space-y-8">
           <motion.h1
-            className={`${titillium_web.className} text-blue-900 dark:text-slate-50 text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-10 sm:leading-[3rem] lg:leading-[4rem] xl:leading-[4.5rem] font-bold tracking-wide`}
+            className={`${titillium_web.className} text-sky-800 dark:text-slate-50 text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-10 sm:leading-[3rem] lg:leading-[4rem] xl:leading-[4.5rem] font-bold tracking-wide`}
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="relative flex justify-center md:hidden">
             <div className="relative h-[300px] sm:h-[450px] aspect-square">
               <Image
-                src="/person-transparent.jpg"
+                src="/profile-img.jpg"
                 alt="Carlos Garcia image"
                 fill
                 className="self-center relative object-contain rounded-full"
@@ -49,15 +49,15 @@ const Hero = () => {
             }}
           >
             I can{" "}
-            <span className="font-extrabold text-blue-900 dark:text-slate-50 dark:brightness-110">
+            <span className="font-extrabold text-sky-800 dark:text-slate-50 dark:brightness-110">
               manage
             </span>{" "}
             your project,{" "}
-            <span className="font-extrabold text-blue-900  dark:text-slate-50 dark:brightness-110">
+            <span className="font-extrabold text-sky-800  dark:text-slate-50 dark:brightness-110">
               code
             </span>{" "}
             your solution and{" "}
-            <span className="font-extrabold text-blue-900  dark:text-slate-50 dark:brightness-110">
+            <span className="font-extrabold text-sky-800  dark:text-slate-50 dark:brightness-110">
               implement
             </span>{" "}
             your idea.
@@ -90,10 +90,10 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="hidden relative aspect-square flex-1 max-w-[700px] md:block mt-4">
+        <div className="hidden relative aspect-square flex-1 md:block mt-4">
           <Image
-            src="/person-transparent.jpg"
-            alt="Carlos Garcia image"
+            src="/profile-img.jpg"
+            alt="Carlos Garcia profile image"
             fill
             className="object-contain"
             sizes="(min-width: 769px) 50vw"

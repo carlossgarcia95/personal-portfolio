@@ -4,7 +4,7 @@ import ThemeSwitch from "./theme-switch";
 
 const Footer = () => {
   return (
-    <section className="bg-slate-50 dark:bg-slate-900">
+    <section className="bg-slate-100 dark:bg-slate-900">
       <footer className="p-5 space-y-4 md:pt-0 text-center border-t border-slate-300 dark:border-slate-600 mx-auto max-w-7xl w-11/12">
         <div className="flex self-center justify-center md:hidden">
           <ThemeSwitch />
@@ -18,7 +18,7 @@ const Footer = () => {
           </Link>
         </div>
         <p className="text-xs space-y-2">
-          &copy; 2023 Carlos Garcia. All rights reserved.
+          &copy; 2024 Carlos Garcia. All rights reserved.
         </p>
         <p className="text-xs">
           <span className="font-semibold">About website:</span> Designed and

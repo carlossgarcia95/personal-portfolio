@@ -31,7 +31,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <motion.div
-              className="absolute left-4 bottom-4 h-[30rem] w-full bg-teal-600 rounded-lg shadow-xl"
+              className="absolute left-4 bottom-4 h-[30rem] w-full bg-sky-700 rounded-lg shadow-xl"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -58,10 +58,10 @@ const About = () => {
               <div className="flex justify-center md:hidden mb-4">
                 <BarChartHorizontalBig
                   size={80}
-                  className="self-center text-center text-blue-900 dark:text-blue-600 items-center"
+                  className="self-center text-center text-sky-700 dark:text-sky-600 items-center"
                 />
               </div>
-              <h3 className="text-xl text-center md:text-left text-blue-900 font-medium dark:text-slate-50">
+              <h3 className="text-xl text-center md:text-left text-sky-700 font-medium dark:text-slate-50">
                 Project Management
               </h3>
               <p className="text-left leading-7">
@@ -86,9 +86,9 @@ const About = () => {
               viewport={{ once: true, amount: 0.35 }}
             >
               <div className="flex justify-center md:hidden">
-                <Code size={80} className="text-blue-900 dark:text-blue-600" />
+                <Code size={80} className="text-sky-700 dark:text-sky-600" />
               </div>
-              <h3 className="text-xl text-center md:text-left text-blue-900 font-medium dark:text-slate-50">
+              <h3 className="text-xl text-center md:text-left text-sky-700 font-medium dark:text-slate-50">
                 Web Development
               </h3>
               <p className="text-left leading-7">

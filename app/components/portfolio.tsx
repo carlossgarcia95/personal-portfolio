@@ -6,10 +6,10 @@ import { titillium_web } from "./ui/fonts";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="bg-blue-950">
+    <section id="portfolio" className="bg-zinc-900 dark:bg-blue-950">
       <div className="py-12 flex flex-col justify-center text-center gap-3 md:gap-6">
         <h2
-          className={`${titillium_web.className} section-heading !text-slate-50`}
+          className={`${titillium_web.className} !text-slate-50 section-heading `}
         >
           Portfolio
         </h2>
