@@ -26,7 +26,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            I&apos;m Carlos Garcia, Project Manager and Full-Stack Developer.
+            I&apos;m Carlos Garcia, Project Manager and Web Developer.
           </motion.h1>
           <div className="relative flex justify-center md:hidden">
             <div className="relative h-[300px] sm:h-[450px] aspect-square">
