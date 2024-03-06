@@ -78,7 +78,7 @@ export const projectsData = [
       githubUrl: "https://github.com/carlossgarcia95/iStore",
     },
     {
-      title: "Issue Tracker",
+      title: "Buggy",
       description:
         "An application for creating, tracking, and assigning issues. Includes visualization dashboard to help manage issues.",
       tags: [
@@ -91,9 +91,10 @@ export const projectsData = [
         "NextAuth",
         "Zod",
         "Recharts",
+        "Clerk",
       ],
       imageUrl: "/issue-tracker.jpg",
-      projectUrl: "https://issue-tracker-two-sigma.vercel.app/",
-      githubUrl: "https://github.com/carlossgarcia95/issue-tracker",
+      projectUrl: "https://buggy-one.vercel.app/",
+      githubUrl: "https://github.com/carlossgarcia95/buggy",
     },
   ];
