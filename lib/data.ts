@@ -42,59 +42,59 @@ export const experiencesData = [
 ];
 
 export const projectsData = [
-    {
-      title: "Red Taco Shop",
-      description:
-        "My first formal client, I designed and developed Red Taco Shop's website, incorporating Google Analytics for website traffic monitoring and Framer for advanced animations.",
-      tags: [
-        "React",
-        "Next.js",
-        "Typescript",
-        "Tailwind",
-        "Google Analytics",
-        "Framer",
-      ],
-      imageUrl: "/red-taco-shop.jpg",
-      projectUrl: "https://red-taco-shop.vercel.app/",
-      githubUrl: "https://github.com/carlossgarcia95/red-taco-shop",
-    },
-    {
-      title: "iStore",
-      description:
-        "An e-commerce website that sells apple products, has its own cart system, user authentication, and is integrated with Stripe checkout.",
-      tags: [
-        "React",
-        "Next.js",
-        "TypeScript",
-        "Tailwind",
-        "MongoDB",
-        "Prisma",
-        "React Query",
-        "NextAuth",
-        "Stripe",
-      ],
-      imageUrl: "/iStore.jpg",
-      projectUrl: "https://istore-shopping.vercel.app/",
-      githubUrl: "https://github.com/carlossgarcia95/iStore",
-    },
-    {
-      title: "Buggy",
-      description:
-        "An application for creating, tracking, and assigning issues. Includes visualization dashboard to help manage issues.",
-      tags: [
-        "React",
-        "Next.js",
-        "Typescript",
-        "Tailwind",
-        "MySQL",
-        "Prisma",
-        "NextAuth",
-        "Zod",
-        "Recharts",
-        "Clerk",
-      ],
-      imageUrl: "/issue-tracker.jpg",
-      projectUrl: "https://buggy-one.vercel.app/",
-      githubUrl: "https://github.com/carlossgarcia95/buggy",
-    },
-  ];
+  {
+    title: "Red Taco Shop",
+    description:
+      "My first formal client, I designed and developed Red Taco Shop's website, incorporating Google Analytics for website traffic monitoring and Framer for advanced animations.",
+    tags: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Tailwind",
+      "Google Analytics",
+      "Framer",
+    ],
+    imageUrl: "/red-taco-shop.jpg",
+    projectUrl: "https://red-taco-shop.vercel.app/",
+    githubUrl: "https://github.com/carlossgarcia95/red-taco-shop",
+  },
+  {
+    title: "Task Master",
+    description:
+      "An application for creating, tracking, and assigning issues. Includes visualization dashboard to help manage issues.",
+    tags: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Tailwind",
+      "MySQL",
+      "Prisma",
+      "NextAuth",
+      "Zod",
+      "Recharts",
+      "Clerk",
+    ],
+    imageUrl: "/issue-tracker.jpg",
+    projectUrl: "https://task-master-self.vercel.app/dashboards",
+    githubUrl: "https://github.com/carlossgarcia95/task-master",
+  },
+  {
+    title: "iStore",
+    description:
+      "An e-commerce website that sells apple products, has its own cart system, user authentication, and is integrated with Stripe checkout.",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "MongoDB",
+      "Prisma",
+      "React Query",
+      "NextAuth",
+      "Stripe",
+    ],
+    imageUrl: "/iStore.jpg",
+    projectUrl: "https://istore-shopping.vercel.app/",
+    githubUrl: "https://github.com/carlossgarcia95/iStore",
+  },
+];
